@@ -1,9 +1,9 @@
-package com.initiate.initiativemod.init;
+package com.initstudios.initiative.init;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.initiate.initiativemod.blocks.BlockBase;
+import com.initstudios.initiative.blocks.BlockBase;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

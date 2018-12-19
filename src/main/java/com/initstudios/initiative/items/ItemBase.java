@@ -1,8 +1,8 @@
-package com.initstudios.initiate.items;
+package com.initstudios.initiative.items;
 
-import com.initstudios.initiate.Main;
-import com.initstudios.initiate.init.ModItems;
-import com.initstudios.initiate.util.IHasModel;
+import com.initstudios.initiative.Main;
+import com.initstudios.initiative.init.ModItems;
+import com.initstudios.initiative.util.IHasModel;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -12,7 +12,7 @@ public class ItemBase extends Item implements IHasModel {
 	public ItemBase(String name) {
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.modtab);
+		setCreativeTab(Main.initiative);
 		
 		ModItems.ITEMS.add(this);
 	}

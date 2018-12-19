@@ -1,6 +1,8 @@
 package com.initstudios.initiative;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -10,6 +12,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import org.apache.logging.log4j.Logger;
 
+import com.initstudios.initiative.init.ModItems;
+import com.initstudios.initiative.proxy.ClientProxy;
 import com.initstudios.initiative.proxy.CommonProxy;
 import com.initstudios.initiative.util.Reference;
 
@@ -27,6 +31,7 @@ public class Main
     
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;
+    public static ClientProxy clientproxy;
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
@@ -39,4 +44,13 @@ public class Main
         // some example code
         logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
+    
+    public static CreativeTabs initiative = new CreativeTabs("initiative") 
+	{
+		@Override
+		public ItemStack getTabIconItem() 
+		{
+			return new ItemStack(ModItems.DARK_ENERGY);
+		}
+	};
 }
