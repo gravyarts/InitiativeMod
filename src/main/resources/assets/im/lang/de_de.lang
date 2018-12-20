@@ -1,0 +1,27 @@
+//Essentials
+item.refined_ingot.name=Raffinierter Barren
+item.steel_ingot.name=Stahlbarren
+item.dark_matter.name=Dunkle Materie
+item.dark_energy.name=Dunkle Energie
+item.black_hole_stable.name=Stabiele Energie
+item.black_hole_unstable.name=Instabiele Energie
+//Portal Guns
+item.portal_gun_default.name=Portal Gun
+//Misc
+item.vhs.name=VHS
+item.vhs_cracked.name=Rissige VHS
+//Moon
+tile.moon_dust_hardened.name=Gehärteter Mondstaub
+tile.moon_dust.name=Mondstaub
+tile.moon_stone.name=Mondstein
+tile.moon_stone_top.name=Mondsteinoberfläche
+tile.moon_panel_ps.name=Tragbare Oberfläche
+tile.moon_panel_psc.name=Gemeißelte tragbare Oberfläche
+tile.moon_panel_s.name=Oberfläche
+tile.moon_panel_sc.name=Gemeißelte Oberfläche
+tile.moon_ore.name=Monderz
+//Overworld
+block.steel_block.name=Stahlblock
+block.rf_block.name=Raffinierter Block
+//Tab
+itemGroup.modtab=Initiative
