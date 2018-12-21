@@ -4,7 +4,6 @@ import com.initstudios.initiative.Main;
 import com.initstudios.initiative.init.ModItems;
 import com.initstudios.initiative.util.IHasModel;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 public class ItemBase extends Item implements IHasModel {
