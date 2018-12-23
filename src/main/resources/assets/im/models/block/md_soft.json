@@ -1,6 +1,6 @@
 {
    "parent": "block/cube_all",
    "textures": {
-       "all": "im:moon/md_soft"
+       "all": "im:blocks/md_soft"
    }
 }
