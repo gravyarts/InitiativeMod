@@ -1,5 +1,6 @@
 package com.initstudios.initiative;
 
+import com.initstudios.initiative.util.LoggingUtil;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
@@ -30,17 +31,19 @@ public class Main
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+       LoggingUtil.initiativeLogger = event.getModLog();
+       LoggingUtil.info("Initiative Mod pre initialisation has begun! :D");
     }
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-
+       LoggingUtil.info("Initiative Mod initialisation has begun! :D");
     }
     
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-    	
+       LoggingUtil.info("Initiative Mod post initialisation has begun! :D");
     }
     
     public static CreativeTabs initiative = new CreativeTabs("initiative") 
