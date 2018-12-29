@@ -22,5 +22,6 @@ public class ModBlocks {
 	public static final Block OW_GRASS_THICK = new OWGrassThick("ow_grass_thick",Material.IRON);
 	//Laboratory
  	public static final Block BLOCK_STORAGE_CUBE = new BlockWeightedCubeBase("storage_cube", Material.ANVIL);
+ 	public static final Block BLOCK_COMPANION_CUBE = new BlockWeightedCubeBase("companion_cube", Material.ANVIL);
 	//Special
 }
