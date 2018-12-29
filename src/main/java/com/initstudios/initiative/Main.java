@@ -33,17 +33,23 @@ public class Main
     {
        LoggingUtil.initiativeLogger = event.getModLog();
        LoggingUtil.info("Initiative Mod pre initialisation has begun! :D");
+
+       proxy.preInit(event);
     }
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
        LoggingUtil.info("Initiative Mod initialisation has begun! :D");
+
+       proxy.init(event);
     }
     
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
        LoggingUtil.info("Initiative Mod post initialisation has begun! :D");
+
+       proxy.postInit(event);
     }
     
     public static CreativeTabs initiative = new CreativeTabs("initiative") 

@@ -14,7 +14,8 @@ import org.apache.logging.log4j.Logger;
  *
  * @author iBuyMountainDew (Dewy)
  */
-public class LoggingUtil {
+public class LoggingUtil
+{
 
    /**
     * The main Log4J logger variable, used to talk to the {@link Logger} interface.
