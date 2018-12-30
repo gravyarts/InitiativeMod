@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.initstudios.initiative.blocks.*;
 
+import com.initstudios.initiative.blocks.gels.GelSpeed;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -23,5 +24,7 @@ public class ModBlocks {
 	//Laboratory
  	public static final Block BLOCK_STORAGE_CUBE = new BlockWeightedCubeBase("storage_cube", Material.ANVIL);
  	public static final Block BLOCK_COMPANION_CUBE = new BlockWeightedCubeBase("companion_cube", Material.ANVIL);
+ 	//Gels
+	public static final Block GEL_SPEED = new GelSpeed("gel_speed", Material.IRON);
 	//Special
 }
