@@ -1,0 +1,22 @@
+itemGroup.initiative=Initiative Mod
+
+item.md_rock_refined.name=Refined Moon Rock
+item.ow_bh_dust.name=Black Hole Dust
+item.ow_bh_unstable.name=Unstable Black Hole
+item.ow_bh_stable.name=Stable Black Hole
+item.ow_bh_crystal.name=Black Hole Crystal
+item.ow_steel_ingot.name=Steel Ingot
+item.ow_rfsteel_ingot.name=Refined Steel Ingot
+item.lb_pg_normal.name=Portal Gun
+
+tile.ow_grass_thick.name=Thick Grass
+tile.storage_cube.name=Weighted Storage Cube
+tile.companion_cube.name=Weighted Companion Cube
+tile.ow_steel_ore.name=Steel Ore
+tile.md_rock.name=Moon Rock
+tile.md_ore.name=Moon Ore
+tile.md_hard.name=Moon Hard? Placeholder
+tile.md_soft.name=Moon Soft? Placeholder
+tile.md_stone.name=Moon Stone
+tile.md_surface.name=Moon Surface
+tile.gel_speed.name=Propulsion Gel

@@ -3,15 +3,10 @@ package com.initstudios.initiative.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.initstudios.initiative.blocks.MDHard;
-import com.initstudios.initiative.blocks.MDOre;
-import com.initstudios.initiative.blocks.MDRock;
-import com.initstudios.initiative.blocks.MDSoft;
-import com.initstudios.initiative.blocks.MDStone;
-import com.initstudios.initiative.blocks.MDSurface;
-import com.initstudios.initiative.blocks.OWGrassThick;
-import com.initstudios.initiative.blocks.OWSteelOre;
+import com.initstudios.initiative.blocks.*;
 
+import com.initstudios.initiative.blocks.gels.GelSpeed;
+import com.initstudios.initiative.blocks.gels.MaterialGel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -28,5 +23,9 @@ public class ModBlocks {
 	public static final Block OW_STEEL_ORE = new OWSteelOre("ow_steel_ore",Material.IRON);
 	public static final Block OW_GRASS_THICK = new OWGrassThick("ow_grass_thick",Material.IRON);
 	//Laboratory
+ 	public static final Block BLOCK_STORAGE_CUBE = new BlockWeightedCubeBase("storage_cube", Material.ANVIL);
+ 	public static final Block BLOCK_COMPANION_CUBE = new BlockWeightedCubeBase("companion_cube", Material.ANVIL);
+ 	//Gels
+	public static final Block GEL_SPEED = new GelSpeed("gel_speed", MaterialGel.GEL);
 	//Special
 }
