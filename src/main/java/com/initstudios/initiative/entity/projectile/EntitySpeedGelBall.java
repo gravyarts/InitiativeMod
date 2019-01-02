@@ -31,7 +31,7 @@ public class EntitySpeedGelBall extends EntityThrowable
         super(worldIn, x, y, z);
     }
 
-    public static void registerFixesSnowball(DataFixer fixer)
+    public static void registerFixesSpeedGelBall(DataFixer fixer)
     {
         EntityThrowable.registerFixesThrowable(fixer, "SpeedGelBall");
     }
@@ -78,6 +78,4 @@ public class EntitySpeedGelBall extends EntityThrowable
             this.setDead();
         }
     }
-
-
 }

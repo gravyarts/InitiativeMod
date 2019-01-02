@@ -1,6 +1,5 @@
 package com.initstudios.initiative.util.handlers;
 
-import com.google.common.collect.Maps;
 import com.initstudios.initiative.entity.projectile.EntitySpeedGelBall;
 import com.initstudios.initiative.init.ModBlocks;
 import com.initstudios.initiative.init.ModItems;
@@ -8,7 +7,6 @@ import com.initstudios.initiative.util.IHasModel;
 
 import com.initstudios.initiative.util.Reference;
 import net.minecraft.block.Block;
-import net.minecraft.client.particle.IParticleFactory;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -18,8 +16,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.EntityEntry;
 import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
-
-import java.util.Map;
 
 @EventBusSubscriber
 public class RegistryHandler {
