@@ -1,15 +1,25 @@
 package com.initstudios.initiative.util.handlers;
 
+import com.google.common.collect.Maps;
+import com.initstudios.initiative.entity.projectile.EntitySpeedGelBall;
 import com.initstudios.initiative.init.ModBlocks;
 import com.initstudios.initiative.init.ModItems;
 import com.initstudios.initiative.util.IHasModel;
 
+import com.initstudios.initiative.util.Reference;
 import net.minecraft.block.Block;
+import net.minecraft.client.particle.IParticleFactory;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.EntityEntry;
+import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
+
+import java.util.Map;
 
 @EventBusSubscriber
 public class RegistryHandler {
@@ -22,6 +32,7 @@ public class RegistryHandler {
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
 		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
 	}
+
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event) {
 		for(Item item : ModItems.ITEMS) {
@@ -34,5 +45,15 @@ public class RegistryHandler {
 				((IHasModel)block).registerModels();
 			}
 		}
+	}
+
+	public static void registerEntities()
+	{
+		ResourceLocation speedGelBallRL = new ResourceLocation(Reference.MOD_ID, "lb_gel_speed_ball");
+
+		EntityEntry speedGelBallEntity = EntityEntryBuilder.create().entity(EntitySpeedGelBall.class)
+				.id(speedGelBallRL, 1).name("lb_gel_speed_ball").tracker(64, 20, true).build();
+
+		ForgeRegistries.ENTITIES.register(speedGelBallEntity);
 	}
 }

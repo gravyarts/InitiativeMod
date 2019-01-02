@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "im:items/lb_gel_speed_ball"
+    }
+}
