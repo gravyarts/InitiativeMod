@@ -42,4 +42,4 @@ If you encounter any issues to do with the mod (such as bugs), let us know [here
 
 This mod is under the [MIT license](https://github.com/Asc4Yin/InitiativeMod/LICENSE.md).
 
-###Have fun with our mod! :D
+### Have fun with our mod! :D
