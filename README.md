@@ -40,6 +40,6 @@ If you encounter any issues to do with the mod (such as bugs), let us know [here
 
 ## License
 
-This mod is under the [MIT license](https://github.com/Asc4Yin/InitiativeMod/LICENSE.md).
+This mod is under the [MIT license](https://github.com/Asc4Yin/InitiativeMod/blob/master/LICENSE.md).
 
 ### Have fun with our mod! :D
