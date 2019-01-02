@@ -25,6 +25,7 @@ public class ModBlocks {
 	//Laboratory
  	public static final Block BLOCK_STORAGE_CUBE = new BlockWeightedCubeBase("storage_cube", Material.ANVIL);
  	public static final Block BLOCK_COMPANION_CUBE = new BlockWeightedCubeBase("companion_cube", Material.ANVIL);
+ 	public static final Block LB_GEL_SPEED_DROPPER = new BlockBase("lb_gel_speed_dropper", Material.IRON);
  	//Gels
 	public static final Block GEL_SPEED = new GelSpeed("gel_speed", MaterialGel.GEL);
 	//Special

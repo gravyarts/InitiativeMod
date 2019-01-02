@@ -1,7 +1,16 @@
 package com.initstudios.initiative.proxy;
 
+import com.initstudios.initiative.entity.projectile.EntitySpeedGelBall;
+import com.initstudios.initiative.init.ModItems;
 import com.initstudios.initiative.util.InitiativeConfig;
+import com.initstudios.initiative.util.handlers.RegistryHandler;
+import net.minecraft.block.BlockDispenser;
+import net.minecraft.dispenser.BehaviorProjectileDispense;
+import net.minecraft.dispenser.IPosition;
+import net.minecraft.entity.IProjectile;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -18,6 +27,7 @@ public class CommonProxy {
 		File dir = event.getModConfigurationDirectory();
 		config = new Configuration(new File(dir.getPath(), "initiative.cfg"));
 		InitiativeConfig.readCfg();
+        RegistryHandler.registerEntities();
 	}
 
 	public void init(FMLInitializationEvent event)
@@ -30,6 +40,22 @@ public class CommonProxy {
 		if (config.hasChanged()) {
 			config.save();
 		}
+
+		registerDispenserBehaviors();
+	}
+
+	static void registerDispenserBehaviors()
+	{
+		BlockDispenser.DISPENSE_BEHAVIOR_REGISTRY.putObject(ModItems.LB_GEL_SPEED_BALL, new BehaviorProjectileDispense()
+		{
+			/**
+			 * Return the projectile entity spawned by this dispense behavior.
+			 */
+			protected IProjectile getProjectileEntity(World worldIn, IPosition position, ItemStack stackIn)
+			{
+				return new EntitySpeedGelBall(worldIn, position.getX(), position.getY(), position.getZ());
+			}
+		});
 	}
 
 	public void registerItemRenderer(Item item, int meta, String id) {}
