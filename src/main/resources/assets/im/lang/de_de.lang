@@ -1,13 +1,14 @@
 itemGroup.initiative=Initiative Mod
 
 item.md_rock_refined.name=Raffinierter Mondstein
-item.ow_bh_dust.name=Staub von einem schwarzen Loch
+item.ow_bh_dust.name=Staub eines schwarzen Lochs
 item.ow_bh_unstable.name=Instabieles schwarzes Loch
 item.ow_bh_stable.name=Stabieles schwarzes Loch
-item.ow_bh_crystal.name=kristall von einem schwarzen Loch
+item.ow_bh_crystal.name=kristall eines schwarzen Lochs
 item.ow_steel_ingot.name=Stahlbarren
 item.ow_rfsteel_ingot.name=Raffinierter Stahlbarren
 item.lb_pg_normal.name=Portalkanone
+item.lb_gel_speed_ball.name=Antriebsgelball
 
 tile.ow_grass_thick.name=Dickes Gras
 tile.storage_cube.name=Gewichteter Speicherkobus
@@ -20,3 +21,6 @@ tile.md_soft.name=Moon Soft? Platzhalter
 tile.md_stone.name=Mondstein
 tile.md_surface.name=Mondoberfläche
 tile.gel_speed.name=Antriebsgel
+tile.lb_gel_speed_dropper.name=Antriebsgelabwerfer
+
+entity.lb_gel_speed_ball.name=Antriebsgelball
