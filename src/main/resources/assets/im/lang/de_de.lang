@@ -11,8 +11,8 @@ item.lb_pg_normal.name=Portalkanone
 item.lb_gel_speed_ball.name=Antriebsgelball
 
 tile.ow_grass_thick.name=Dickes Gras
-tile.storage_cube.name=Gewichteter Speicherkobus
-tile.companion_cube.name=Gewichteter Begleiterkobus
+tile.storage_cube.name=Gewichteter Speicherkubus
+tile.companion_cube.name=Gewichteter Begleiterkubus
 tile.ow_steel_ore.name=Stahlerz
 tile.md_rock.name=Mondstein
 tile.md_ore.name=Monderz
