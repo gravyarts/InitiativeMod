@@ -22,7 +22,7 @@ import com.initstudios.initiative.util.Reference;
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS)
 public class Main 
 {
-    
+
     @Instance
     public static Main instance;
     

@@ -23,10 +23,13 @@ import net.minecraft.item.ItemBlock;
 public class BlockWeightedCubeBase extends BlockFalling implements IHasModel
 {
     public BlockWeightedCubeBase(String name, Material material) {
+
         super(material);
+
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(Main.initiative);
+
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 
