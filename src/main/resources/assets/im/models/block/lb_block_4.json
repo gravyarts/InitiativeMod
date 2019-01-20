@@ -1,0 +1,6 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+       "all": "im:blocks/lb_block_4"
+   }
+}
