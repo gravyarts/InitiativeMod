@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.initstudios.initiative.blocks.*;
 
+import com.initstudios.initiative.blocks.dropper.gel.SpeedGelDropper;
 import com.initstudios.initiative.blocks.gels.GelSpeed;
 import com.initstudios.initiative.blocks.gels.MaterialGel;
 import net.minecraft.block.Block;
@@ -25,7 +26,7 @@ public class ModBlocks {
 	//Laboratory
  	public static final Block BLOCK_STORAGE_CUBE = new BlockWeightedCubeBase("storage_cube", Material.ANVIL);
  	public static final Block BLOCK_COMPANION_CUBE = new BlockWeightedCubeBase("companion_cube", Material.ANVIL);
- 	public static final Block LB_GEL_SPEED_DROPPER = new BlockBase("lb_gel_speed_dropper", Material.IRON);
+ 	public static final Block LB_GEL_SPEED_DROPPER = new SpeedGelDropper("lb_gel_speed_dropper", Material.IRON);
  	public static final Block LB_BLOCK_1 = new BlockBase("lb_block_1", Material.IRON);
  	public static final Block LB_BLOCK_2 = new BlockBase("lb_block_2", Material.IRON);
  	public static final Block LB_BLOCK_3 = new BlockBase("lb_block_3", Material.IRON);
