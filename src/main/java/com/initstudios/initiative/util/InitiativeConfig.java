@@ -9,6 +9,7 @@ public class InitiativeConfig
    private static final String CATEGORY_GENERAL = "general";
    private static final String CATEGORY_DIMENSIONS = "dimensions";
 
+
    public static void readCfg()
    {
       Configuration cfg = CommonProxy.config;

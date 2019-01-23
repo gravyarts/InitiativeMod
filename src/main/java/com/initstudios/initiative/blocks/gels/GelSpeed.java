@@ -22,7 +22,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class GelSpeed extends Block implements IHasModel {
 
-    private static final AxisAlignedBB GEL_SPEED_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.0625D, 1.0D);
+    private static final AxisAlignedBB GEL_SPEED_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.125D, 1.0D);
 
     public GelSpeed(String name, Material material)
     {
