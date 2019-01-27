@@ -1,0 +1,6 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+       "all": "im:laboratory/lb_faded_foam_panel_portable_bottom"
+   }
+}

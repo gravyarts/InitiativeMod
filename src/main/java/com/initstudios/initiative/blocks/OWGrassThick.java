@@ -11,6 +11,5 @@ public class OWGrassThick extends BlockBase{
 		setSoundType(SoundType.PLANT);
 		setHardness(0F);
 		setResistance(0F);
-		setHarvestLevel("shovel", 1);
 	}
 }
