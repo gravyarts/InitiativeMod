@@ -436,7 +436,7 @@ JSON! JSON! JSON!
 Error 404 splashs.txt not found.
 discord.gg/Sh3y6HK
 uk was here.
-JetBrains < Eclipse
+JetBrains > Eclipse
 Don't Play With Portal Guns!
 Welcome to Aperture Labs, Enjoy Your Stay!
 Thank You For Testing With Us!
@@ -452,3 +452,4 @@ oH yEAH yEAH¡
 ¡¿¡¿¡¿
 Help Me Player!
 Memes are Great!
+Also try MCIDE! (Coming Soon)
