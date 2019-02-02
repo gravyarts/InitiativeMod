@@ -1,6 +1,13 @@
 {
+<<<<<<< HEAD
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "im:laboratory/lb_foam_panel_portable_top"
+	}
+=======
    "parent": "block/cube_all",
    "textures": {
        "all": "im:laboratory/lb_foam_panel_portable_top"
    }
+>>>>>>> 883abdbd760f8a7fb448f60f12bc12fe5ea47456
 }

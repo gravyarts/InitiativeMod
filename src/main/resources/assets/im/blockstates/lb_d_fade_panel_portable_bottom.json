@@ -1,5 +1,11 @@
 {
+<<<<<<< HEAD
+	"variants": {
+		"normal": { "model": "im:lb_d_fade_panel_portable_bottom" }
+	}
+=======
     "variants": {
         "normal": { "model": "im:lb_d_fade_panel_portable_bottom" }
     }
+>>>>>>> 883abdbd760f8a7fb448f60f12bc12fe5ea47456
 }
