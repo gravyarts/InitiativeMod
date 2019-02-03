@@ -6,13 +6,14 @@ import com.initstudios.initiative.init.ModItems;
 import com.initstudios.initiative.util.IHasModel;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.BlockRenderLayer;
 
-public class LBCubes extends Block implements IHasModel {
+public class LBCubes extends BlockFalling implements IHasModel {
 	public LBCubes(String name, Material material) {
 		super(material);
 		setUnlocalizedName(name);

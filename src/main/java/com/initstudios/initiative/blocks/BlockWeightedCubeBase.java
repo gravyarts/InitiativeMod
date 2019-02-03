@@ -1,3 +1,14 @@
+/*
+    Copyright (C) 2018-2019 Init Studios. All rights reserved.
+
+    This document is the property of Init Studios.
+    It is considered confidential and proprietary.
+
+    This document may not be reproduced or transmitted in any form,
+    in whole or in part, without the express written permission of
+    Init Studios.
+ */
+
 package com.initstudios.initiative.blocks;
 
 import com.initstudios.initiative.Main;
@@ -28,7 +39,7 @@ public class BlockWeightedCubeBase extends BlockFalling implements IHasModel
 
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(Main.initiative);
+        setCreativeTab(Main.items);
 
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
