@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.initstudios.initiative.blocks.*;
-import com.initstudios.initiative.blocks.gels.GelSpeed;
+import com.initstudios.initiative.blocks.gels.LBGelSpeed;
 import com.initstudios.initiative.blocks.gels.MaterialGel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -34,7 +34,7 @@ public class ModBlocks {
  	public static final Block LB_GEL_WHITE_DROPPER = new LBDropper("lb_gel_white_dropper", Material.IRON);
  	public static final Block LB_CUBE_DROPPER = new LBDropper("lb_cube_dropper", Material.IRON);
 	//Special
-	public static final Block GEL_SPEED = new GelSpeed("gel_speed", MaterialGel.GEL);
+	public static final Block LB_GEL_SPEED = new LBGelSpeed("lb_gel_speed", MaterialGel.GEL);
 	//Bottom Portable
 	public static final Block LB_CL_PANEL_PORTABLE_BOTTOM = new LBPanelPortable("lb_cl_panel_portable_bottom", Material.IRON);
 	public static final Block LB_CRACKED_PANEL_PORTABLE_BOTTOM = new LBPanelPortable("lb_cracked_panel_portable_bottom", Material.IRON);
