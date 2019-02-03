@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-
+import com.initstudios.initiative.init.ModBlocks;
 import com.initstudios.initiative.init.ModItems;
 import com.initstudios.initiative.proxy.ClientProxy;
 import com.initstudios.initiative.proxy.CommonProxy;
@@ -51,12 +51,20 @@ public class Main
        proxy.postInit(event);
     }
     
-    public static CreativeTabs initiative = new CreativeTabs("initiative") 
+    public static CreativeTabs items = new CreativeTabs("items")
 	{
 		@Override
 		public ItemStack getTabIconItem() 
 		{
 			return new ItemStack(ModItems.OW_BH_UNSTABLE);
+		}
+	};
+    public static CreativeTabs panels = new CreativeTabs("panels")
+	{
+		@Override
+		public ItemStack getTabIconItem() 
+		{
+			return new ItemStack(ModBlocks.LB_D_FOAM_PATCH);
 		}
 	};
 }

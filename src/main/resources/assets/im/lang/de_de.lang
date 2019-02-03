@@ -23,5 +23,12 @@ tile.md_surface.name=Mondoberfläche
 tile.gel_speed.name=Antriebsgel
 tile.lb_gel_speed_dropper.name=Antriebsgelabwerfer
 tile.md_core.name=Mondkern
+tile.lb_block_1.name=Laborblock
+tile.lb_block_2.name=Laborblock
+tile.lb_block_3.name=Laborblock
+tile.lb_block_4.name=Laborblock
+tile.lb_block_5.name=Laborblock
+tile.lb_block_6_bottom.name=Laborblockunterseite
+tile.lb_block_6_top.name=Laborblockoberseite
 
 entity.lb_gel_speed_ball.name=Antriebsgelball

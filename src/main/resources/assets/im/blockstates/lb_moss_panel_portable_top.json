@@ -1,11 +1,5 @@
 {
-<<<<<<< HEAD
 	"variants": {
 		"normal": { "model": "im:lb_moss_panel_portable_top" }
 	}
-=======
-    "variants": {
-        "normal": { "model": "im:lb_moss_panel_portable_top" }
-    }
->>>>>>> 883abdbd760f8a7fb448f60f12bc12fe5ea47456
 }

@@ -13,7 +13,7 @@ public class GelBallBase extends ItemSnowball implements IHasModel
 
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(Main.initiative);
+        setCreativeTab(Main.items);
 
         this.maxStackSize = 32;
 
