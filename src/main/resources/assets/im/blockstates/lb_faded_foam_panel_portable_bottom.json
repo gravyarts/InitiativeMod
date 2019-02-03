@@ -1,5 +1,5 @@
 {
-    "variants": {
-        "normal": { "model": "im:lb_faded_foam_panel_portable_bottom" }
-    }
+	"variants": {
+		"normal": { "model": "im:lb_faded_foam_panel_portable_bottom" }
+	}
 }

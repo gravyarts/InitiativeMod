@@ -1,6 +1,6 @@
 {
-   "parent": "block/cube_all",
-   "textures": {
-       "all": "im:laboratory/lb_moss_panel_portable_bottom"
-   }
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "im:laboratory/lb_moss_panel_portable_bottom"
+	}
 }

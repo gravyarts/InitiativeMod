@@ -30,7 +30,7 @@ public class GelSpeed extends Block implements IHasModel {
 
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(Main.initiative);
+        setCreativeTab(Main.items);
         setResistance(1.0F);
         setHardness(0.5F);
 
@@ -88,7 +88,8 @@ public class GelSpeed extends Block implements IHasModel {
         return !worldIn.isAirBlock(pos.down());
     }
 
-    @SideOnly(Side.CLIENT)
+    @SuppressWarnings("deprecation")
+	@SideOnly(Side.CLIENT)
     public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
     {
         if (side == EnumFacing.UP)

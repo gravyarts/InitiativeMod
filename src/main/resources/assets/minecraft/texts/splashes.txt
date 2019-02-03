@@ -418,6 +418,8 @@ moc.buhtig
 Discord > Instagram
 sotp!
 idot
+<<<<<<< HEAD
+=======
 Made by mangahigh users
 Yma!
 In thneedville, it's a brand new dawn!
@@ -454,3 +456,4 @@ oH yEAH yEAH¡
 Help Me Player!
 Memes are Great!
 Also try MCIDE! (Coming Soon)
+>>>>>>> 883abdbd760f8a7fb448f60f12bc12fe5ea47456

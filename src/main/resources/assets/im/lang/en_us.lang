@@ -8,11 +8,7 @@ item.ow_bh_crystal.name=Black Hole Crystal
 item.ow_steel_ingot.name=Steel Ingot
 item.ow_rfsteel_ingot.name=Refined Steel Ingot
 item.lb_pg_normal.name=Portal Gun
-item.lb_gel_speed_ball.name=Propulsion Gel Ball
-
 tile.ow_grass_thick.name=Thick Grass
-tile.storage_cube.name=Weighted Storage Cube
-tile.companion_cube.name=Weighted Companion Cube
 tile.ow_steel_ore.name=Steel Ore
 tile.md_rock.name=Moon Rock
 tile.md_ore.name=Moon Ore
@@ -20,8 +16,18 @@ tile.md_hard.name=Moon Hard? Placeholder
 tile.md_soft.name=Moon Gravel
 tile.md_stone.name=Moon Stone
 tile.md_surface.name=Moon Surface
-tile.gel_speed.name=Propulsion Gel
-tile.lb_gel_speed_dropper.name=Speed Gel Dropper
+
 tile.md_core.name=Moon Core
 
+Cube
+tile.lb_cube_storage.name=Storage Cube
+tile.lb_cube_companion.name=Companion Cube
+tile.lb_cube_button.name=Super-Colliding Button
+Dropper
+tile.lb_gel_speed_dropper.name=Propulsion Gel Dropper
+tile.lb_gel_jump_dropper.name=Repulsion Gel Dropper
+tile.lb_gel_white_dropper.name=Conversion Gel Dropper
+tile.lb_cube_dropper.name=Cube Dropper
+Gel
 entity.lb_gel_speed_ball.name=Propulsion Gel Ball
+tile.gel_speed.name=Propulsion Gel
