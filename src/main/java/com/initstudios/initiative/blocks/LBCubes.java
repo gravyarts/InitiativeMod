@@ -5,7 +5,6 @@ import com.initstudios.initiative.init.ModBlocks;
 import com.initstudios.initiative.init.ModItems;
 import com.initstudios.initiative.util.IHasModel;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

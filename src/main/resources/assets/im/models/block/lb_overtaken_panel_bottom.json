@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "im:laboratory/lb_overtaken_panel_bottom"
+	}
+}

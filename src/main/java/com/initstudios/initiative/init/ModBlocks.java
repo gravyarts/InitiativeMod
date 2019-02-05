@@ -69,4 +69,22 @@ public class ModBlocks {
 	public static final Block LB_D_FADED_FOAM_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_d_faded_foam_panel_portable_top", Material.IRON);
 	public static final Block LB_D_MOSS_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_d_moss_panel_portable_top", Material.IRON);
 	public static final Block LB_D_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_d_panel_portable_top", Material.IRON);
+	//Bottom Portable
+	public static final Block LB_CL_PANEL_BOTTOM = new LBPanelNonPortable("lb_cl_panel_bottom", Material.IRON);
+	public static final Block LB_CROSS_PANEL_BOTTOM = new LBPanelNonPortable("lb_cross_panel_bottom",Material.IRON);
+	public static final Block LB_CUBE_PANEL_BOTTOM = new LBPanelNonPortable("lb_cube_panel_bottom",Material.IRON);
+	public static final Block LB_SCRATCHED_PANEL_BOTTOM = new LBPanelNonPortable("lb_scratched_panel_bottom",Material.IRON);
+	public static final Block LB_CRACKED_PANEL_BOTTOM = new LBPanelNonPortable("lb_cracked_panel_bottom",Material.IRON);
+	public static final Block LB_FADED_FOAM_PANEL_BOTTOM = new LBPanelNonPortable("lb_faded_foam_panel_bottom",Material.IRON);
+	public static final Block LB_CROSS_VINE_PANEL_BOTTOM = new LBPanelNonPortable("lb_cross_vine_panel_bottom",Material.IRON);
+	public static final Block LB_OVERTAKEN_PANEL_BOTTOM = new LBPanelNonPortable("lb_overtaken_panel_bottom",Material.IRON);
+	//Top Portable
+	public static final Block LB_CL_PANEL_TOP = new LBPanelNonPortable("lb_cl_panel_top", Material.IRON);
+	public static final Block LB_CROSS_PANEL_TOP = new LBPanelNonPortable("lb_cross_panel_top",Material.IRON);
+	public static final Block LB_CUBE_PANEL_TOP = new LBPanelNonPortable("lb_cube_panel_top",Material.IRON);
+	public static final Block LB_SCRATCHED_PANEL_TOP = new LBPanelNonPortable("lb_scratched_panel_top",Material.IRON);
+	public static final Block LB_CRACKED_PANEL_TOP = new LBPanelNonPortable("lb_cracked_panel_top",Material.IRON);
+	public static final Block LB_FADED_FOAM_PANEL_TOP = new LBPanelNonPortable("lb_faded_foam_panel_top",Material.IRON);
+	public static final Block LB_CROSS_VINE_PANEL_TOP = new LBPanelNonPortable("lb_cross_vine_panel_top",Material.IRON);
+	public static final Block LB_OVERTAKEN_PANEL_TOP = new LBPanelNonPortable("lb_overtaken_panel_top",Material.IRON);
 }
