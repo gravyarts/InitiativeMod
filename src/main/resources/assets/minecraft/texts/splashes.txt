@@ -382,10 +382,7 @@ Coded with style!
 Java > Bedrock
 Stick with Java edition! Don't pay for skins!
 Bedrock is Microsoft's favourite. Unfair, innit!
-eat pant
-consume pantaloon
-consume pant
-eat pantaloon
+Eat pantaloon!
 Some stuff by Init Studios!
 The photosynthesis of the diameter
 Where's Vector3f?
@@ -393,21 +390,22 @@ NoSplashTextException
 Now with custom credits!
 Do you know any other mod with additional splash texts?
 tem was here
-JSONs are rees!
+JSONs FTW!
 Bring back .lang!
-1.12
-oof
+On 1.12!
+*confused pikachu*
+*oof*
 Not dead!
 ALL CAPS
-reeeee
+REEEEEEEE
 Big Chungus is our lord.
-The A P E X of Minecraft modding.
+The A P E R T U R E of Minecraft modding.
 Also try Portal 2!
 Also try Macrocosm!
 Also try Delta!
-Technology is wild, isn't it.
+Technology is wild, isn't it?
 Commit the changes!
-Obfuscated! (maybe???)
+field_22456_e
 Made in part by Dewy
 Rydw i'n byw yn y bocs!
 Ti'n jocan!
@@ -415,7 +413,7 @@ Paid siarad nonsens!
 I learn Welsh in school!
 Baguette!
 moc.buhtig
-Discord > Instagram
+Discord > *
 sotp!
 idot
 <<<<<<< HEAD
@@ -435,26 +433,25 @@ The perfect dish!
 Concern.
 Still closed source!
 JSON! JSON! JSON!
-Error 404 splashs.txt not found.
+Error 404: splashes.txt not found.
 discord.gg/Sh3y6HK
 uk was here.
-JetBrains = Eclipse
-JetBrains and Eclipse are the best!
-Don't Play With Portal Guns!
-Welcome to Aperture Labs, Enjoy Your Stay!
-Thank You For Testing With Us!
+IntelliJ > Eclipse
+Is this the blue one?
+Welcome to Aperture Science, enjoy your stay!
+Thank you for testing with us!
 Human presence detected.
-Your all on your own.
+You are all on your own.
 Nothing to see here.
 GLaDOS!!
 Portals can be dangerous.
-Don't go alone.
-Its 2am can we stop?
+Don't go alone, take this!
+Its 2AM, can we stop??
 Please report bugs on our discord.
 oH yEAH yEAH¡
 ¡¿¡¿¡¿
-Help Me Player!
-Memes are Great!
+Help me Player!
+Memes are great!
 Also try MCIDE! (Coming Soon)
 >>>>>>> 883abdbd760f8a7fb448f60f12bc12fe5ea47456
-Subscribe to Pewdiepie
+Subscribe to PewDiePie
