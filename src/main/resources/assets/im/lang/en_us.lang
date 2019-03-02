@@ -19,6 +19,8 @@ tile.md_stone.name=Moon Stone
 tile.md_surface.name=Moon Surface
 
 tile.md_core.name=Moon Core
+Handheld
+tile.handheld_00_pedestal.name=Portal Gun Pedestal
 
 Cube
 tile.lb_cube_storage.name=Storage Cube

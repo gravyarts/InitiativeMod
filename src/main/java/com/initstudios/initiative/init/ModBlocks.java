@@ -23,12 +23,12 @@ import net.minecraft.block.material.Material;
 public class ModBlocks {
 	//Moon
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
-	public static final Block MD_SURFACE = new MDSurface("md_surface",Material.IRON);
-	public static final Block MD_STONE = new MDStone("md_stone",Material.IRON);
-	public static final Block MD_SOFT = new MDSoft("md_soft",Material.IRON);
-	public static final Block MD_HARD = new MDHard("md_hard",Material.IRON);
-	public static final Block MD_ORE = new MDOre("md_ore",Material.IRON);
-	public static final Block MD_ROCK = new MDRock("md_rock",Material.IRON);
+	public static final Block MD_SURFACE = new BlockBase("md_surface",Material.IRON);
+	public static final Block MD_STONE = new BlockBase("md_stone",Material.IRON);
+	public static final Block MD_SOFT = new BlockBase("md_soft",Material.IRON);
+	public static final Block MD_HARD = new BlockBase("md_hard",Material.IRON);
+	public static final Block MD_ORE = new BlockBase("md_ore",Material.IRON);
+	public static final Block MD_ROCK = new BlockBase("md_rock",Material.IRON);
 	//Normal
 	public static final Block OW_STEEL_ORE = new OWSteelOre("ow_steel_ore",Material.IRON);
 	public static final Block OW_GRASS_THICK = new OWGrassThick("ow_grass_thick",Material.IRON);
@@ -39,13 +39,17 @@ public class ModBlocks {
  	public static final Block LB_FOAM_PATCH = new LBPanelPortable("lb_foam_patch", Material.IRON);
  	public static final Block LB_D_FOAM_PATCH = new LBPanelPortable("lb_d_foam_patch", Material.IRON);
  	public static final Block LB_cube_button = new LBButton("lb_cube_button", Material.IRON);
+ 	//Handheld
+ 	public static final Block HANDHELD_00_PEDESTAL = new HandheldPedestal("handheld_00_pedestal", Material.IRON);
  	//Dropper
  	public static final Block LB_GEL_JUMP_DROPPER = new LBDropper("lb_gel_jump_dropper", Material.IRON);
  	public static final Block LB_GEL_SPEED_DROPPER = new LBDropper("lb_gel_speed_dropper", Material.IRON);
  	public static final Block LB_GEL_WHITE_DROPPER = new LBDropper("lb_gel_white_dropper", Material.IRON);
  	public static final Block LB_CUBE_DROPPER = new LBDropper("lb_cube_dropper", Material.IRON);
 	//Special
-	public static final Block LB_GEL_SPEED = new LBGelSpeed("lb_gel_speed", MaterialGel.GEL);
+	public static final Block LB_SCREEN = new LBScreen("lb_screen", Material.IRON);
+	//Gel
+	public static final Block GEL_SPEED = new LBGelSpeed("gel_speed", MaterialGel.GEL);
 	//Bottom Portable
 	public static final Block LB_CL_PANEL_PORTABLE_BOTTOM = new LBPanelPortable("lb_cl_panel_portable_bottom", Material.IRON);
 	public static final Block LB_CRACKED_PANEL_PORTABLE_BOTTOM = new LBPanelPortable("lb_cracked_panel_portable_bottom", Material.IRON);
@@ -69,7 +73,7 @@ public class ModBlocks {
 	public static final Block LB_D_FADED_FOAM_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_d_faded_foam_panel_portable_top", Material.IRON);
 	public static final Block LB_D_MOSS_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_d_moss_panel_portable_top", Material.IRON);
 	public static final Block LB_D_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_d_panel_portable_top", Material.IRON);
-	//Bottom Portable
+	//Bottom NonPortable
 	public static final Block LB_CL_PANEL_BOTTOM = new LBPanelNonPortable("lb_cl_panel_bottom", Material.IRON);
 	public static final Block LB_CROSS_PANEL_BOTTOM = new LBPanelNonPortable("lb_cross_panel_bottom",Material.IRON);
 	public static final Block LB_CUBE_PANEL_BOTTOM = new LBPanelNonPortable("lb_cube_panel_bottom",Material.IRON);
@@ -78,7 +82,7 @@ public class ModBlocks {
 	public static final Block LB_FADED_FOAM_PANEL_BOTTOM = new LBPanelNonPortable("lb_faded_foam_panel_bottom",Material.IRON);
 	public static final Block LB_CROSS_VINE_PANEL_BOTTOM = new LBPanelNonPortable("lb_cross_vine_panel_bottom",Material.IRON);
 	public static final Block LB_OVERTAKEN_PANEL_BOTTOM = new LBPanelNonPortable("lb_overtaken_panel_bottom",Material.IRON);
-	//Top Portable
+	//Top NonPortable
 	public static final Block LB_CL_PANEL_TOP = new LBPanelNonPortable("lb_cl_panel_top", Material.IRON);
 	public static final Block LB_CROSS_PANEL_TOP = new LBPanelNonPortable("lb_cross_panel_top",Material.IRON);
 	public static final Block LB_CUBE_PANEL_TOP = new LBPanelNonPortable("lb_cube_panel_top",Material.IRON);
