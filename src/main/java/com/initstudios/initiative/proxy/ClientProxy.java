@@ -12,22 +12,52 @@
 package com.initstudios.initiative.proxy;
 
 import com.initstudios.initiative.entity.projectile.EntitySpeedGelBall;
+import com.initstudios.initiative.keybinds.PingtoolKeybindHandler;
+import com.initstudios.initiative.network.PacketHandler;
+import com.initstudios.initiative.network.packet.ClientSendPing;
+import com.initstudios.initiative.pingTool.PingType;
+import com.initstudios.initiative.pingTool.PingWrapper;
+import com.initstudios.initiative.util.RaytraceHelper;
 import com.initstudios.initiative.util.render.RenderSpeedGelBall;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.common.config.Property;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-public class ClientProxy extends CommonProxy {
+import java.awt.*;
+
+public class ClientProxy extends CommonProxy
+{
+	public static int pingR;
+	public static int pingG;
+	public static int pingB;
+
+	public static boolean pingBlockOverlay;
+	public static boolean pingMenuBackground;
+	public static boolean sound;
+
+	public static double pingAcceptDistance;
+	public static int pingDuration;
 
 	@Override
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		super.preInit(event);
+
 		RenderingRegistry.registerEntityRenderingHandler(EntitySpeedGelBall.class, RenderSpeedGelBall::new);
+
+		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.KEY_BINDING);
+		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.PING_ALERT);
+		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.PING_MINE);
+		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.PING_LOOK);
+		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.PING_GOTO);
 	}
 
 	@Override
@@ -40,6 +70,39 @@ public class ClientProxy extends CommonProxy {
 	public void postInit(FMLPostInitializationEvent event)
 	{
 		super.postInit(event);
+	}
+
+	public static void sendPing(PingType type)
+	{
+		RayTraceResult mob = RaytraceHelper.raytrace(Minecraft.getMinecraft().player, 50);
+
+		System.out.println("wwwwwwwwwww");
+
+		if (mob != null && mob.typeOfHit == RayTraceResult.Type.BLOCK)
+		{
+			sendPing(mob, new Color(ClientProxy.pingR, ClientProxy.pingG, ClientProxy.pingB).getRGB(), type);
+		}
+	}
+
+	private static void sendPing(RayTraceResult mob, int colour, PingType type)
+	{
+		PacketHandler.INSTANCE.sendToServer(new ClientSendPing(new PingWrapper(mob.getBlockPos(), colour, type)));
+	}
+
+	private int verify(Property property)
+	{
+		int val = property.getInt();
+
+		if (val < 0)
+		{
+			val = 0;
+		}
+		else if (val > 255)
+		{
+			val = 255;
+		}
+
+		return val;
 	}
 
 	@Override

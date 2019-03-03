@@ -22,19 +22,19 @@ tile.md_core.name=Moon Core
 Handheld
 tile.handheld_00_pedestal.name=Portal Gun Pedestal
 
-Cube
+
 tile.lb_cube_storage.name=Storage Cube
 tile.lb_cube_companion.name=Companion Cube
 tile.lb_cube_button.name=Super-Colliding Button
-Dropper
+
 tile.lb_gel_speed_dropper.name=Propulsion Gel Dropper
 tile.lb_gel_jump_dropper.name=Repulsion Gel Dropper
 tile.lb_gel_white_dropper.name=Conversion Gel Dropper
 tile.lb_cube_dropper.name=Cube Dropper
-Gel
+
 entity.lb_gel_speed_ball.name=Propulsion Gel Ball
 tile.gel_speed.name=Propulsion Gel
-Panel Portable
+
 tile.lb_cl_panel_portable_top.name=Clean Panel (§bTop§f)
 tile.lb_cl_panel_portable_bottom.name=Clean Panel (§cBottom§f)
 tile.lb_cracked_panel_portable_top.name=Cracked Panel (§bTop§f)
@@ -59,7 +59,7 @@ tile.lb_d_faded_foam_panel_portable_bottom.name=Dark Faded Panel (§cBottom§f)
 tile.lb_d_moss_panel_portable_top.name=Dark Moss Panel (§bTop§f)
 tile.lb_d_moss_panel_portable_bottom.name=Dark Moss Panel (§cBottom§f)
 tile.lb_d_foam_patch.name=Dark Foam Patch
-Panel NonPortable
+
 tile.lb_cl_panel_top.name=Clean Panel (§bTop§f)
 tile.lb_cl_panel_bottom.name=Clean Panel (§cBottom§f)
 tile.lb_cross_panel_top.name=Cross Panel (§bTop§f)
@@ -76,3 +76,13 @@ tile.lb_cross_vine_panel_top.name=Cross Vine Panel (§bTop§f)
 tile.lb_cross_vine_panel_bottom.name=Cross Vine Panel (§cBottom§f)
 tile.lb_overtaken_panel_top.name=Overtaken Panel (§bTop§f)
 tile.lb_overtaken_panel_bottom.name=Overtaken Panel (§cBottom§f)
+
+key.categories.ping=Ping
+
+key.ping=Opens Ping menu
+im.ping.key.alert=Ping (Alert)
+im.ping.key.mine=Ping (Mine)
+im.ping.key.look=Ping (Look)
+im.ping.key.goto=Ping (Go to)
+
+im.ping.subtitle.bloop=Ping bloops

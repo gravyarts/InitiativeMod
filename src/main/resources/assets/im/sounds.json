@@ -1,0 +1,9 @@
+{
+    "pingbloop": {
+        "category": "player",
+        "sounds": [
+            "im:pingbloop"
+        ],
+        "subtitle": "im.ping.bloop"
+    }
+}

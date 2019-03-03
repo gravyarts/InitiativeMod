@@ -13,6 +13,7 @@ package com.initstudios.initiative.proxy;
 
 import com.initstudios.initiative.entity.projectile.EntitySpeedGelBall;
 import com.initstudios.initiative.init.ModItems;
+import com.initstudios.initiative.network.PacketHandler;
 import com.initstudios.initiative.util.InitiativeConfig;
 import com.initstudios.initiative.util.handlers.RegistryHandler;
 import net.minecraft.block.BlockDispenser;
@@ -38,6 +39,9 @@ public class CommonProxy {
 		File dir = event.getModConfigurationDirectory();
 		config = new Configuration(new File(dir.getPath(), "initiative.cfg"));
 		InitiativeConfig.readCfg();
+
+		PacketHandler.initialize();
+
         RegistryHandler.registerEntities();
 	}
 
