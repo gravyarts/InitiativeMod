@@ -28,7 +28,7 @@ import com.initstudios.initiative.proxy.ClientProxy;
 import com.initstudios.initiative.proxy.CommonProxy;
 import com.initstudios.initiative.util.Reference;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS, dependencies = Reference.DEPENDENCIES_FORGE)
+@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS, dependencies = Reference.DEPENDENCIES_FORGE, guiFactory = Reference.GUI_FACTORY)
 public class Main 
 {
 

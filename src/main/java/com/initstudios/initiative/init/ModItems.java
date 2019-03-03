@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.initstudios.initiative.items.ItemBase;
+import com.initstudios.initiative.items.ItemPortalGun;
 import com.initstudios.initiative.items.ItemSpeedGelBall;
 import com.initstudios.initiative.util.Reference;
 import com.initstudios.initiative.items.ArmorBase;
@@ -40,7 +41,7 @@ public class ModItems {
 	public static final Item OW_STEEL_INGOT = new ItemBase("ow_steel_ingot");
 	public static final Item OW_RFSTEEL_INGOT = new ItemBase("ow_rfsteel_ingot");
 	//Laboratory
-	public static final Item LB_PG_NORMAL = new ItemBase("lb_pg_normal");
+	public static final Item LB_PG_NORMAL = new ItemPortalGun("lb_pg_normal");
 	public static final Item LB_LONG_FALL_BOOTS = new ArmorBase("lb_long_fall_boots", ARMOR_MATERIAL_STEEL_INGOT, 1, EntityEquipmentSlot.FEET);
 	public static final Item LB_GEL_SPEED_BALL = new ItemSpeedGelBall("lb_gel_speed_ball");
 }
