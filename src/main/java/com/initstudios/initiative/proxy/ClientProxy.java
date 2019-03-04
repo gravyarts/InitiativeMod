@@ -24,6 +24,7 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -46,31 +47,7 @@ public class ClientProxy extends CommonProxy
 	public static double pingAcceptDistance;
 	public static int pingDuration;
 
-	@Override
-	public void preInit(FMLPreInitializationEvent event)
-	{
-		super.preInit(event);
-
-		RenderingRegistry.registerEntityRenderingHandler(EntitySpeedGelBall.class, RenderSpeedGelBall::new);
-
-		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.KEY_BINDING);
-		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.PING_ALERT);
-		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.PING_MINE);
-		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.PING_LOOK);
-		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.PING_GOTO);
-	}
-
-	@Override
-	public void init(FMLInitializationEvent event)
-	{
-		super.init(event);
-	}
-
-	@Override
-	public void postInit(FMLPostInitializationEvent event)
-	{
-		super.postInit(event);
-	}
+	public static Configuration configuration;
 
 	public static void sendPing(PingType type)
 	{
@@ -87,6 +64,58 @@ public class ClientProxy extends CommonProxy
 	private static void sendPing(RayTraceResult mob, int colour, PingType type)
 	{
 		PacketHandler.INSTANCE.sendToServer(new ClientSendPing(new PingWrapper(mob.getBlockPos(), colour, type)));
+	}
+
+	@Override
+	public void preInit(FMLPreInitializationEvent event)
+	{
+		super.preInit(event);
+
+		RenderingRegistry.registerEntityRenderingHandler(EntitySpeedGelBall.class, RenderSpeedGelBall::new);
+
+		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.KEY_BINDING);
+		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.PING_ALERT);
+		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.PING_MINE);
+		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.PING_LOOK);
+		ClientRegistry.registerKeyBinding(PingtoolKeybindHandler.PING_GOTO);
+
+		configuration = new Configuration(event.getSuggestedConfigurationFile());
+		configuration.load();
+	}
+
+	@Override
+	public void syncConfig()
+	{
+		Property p_pingR = configuration.get("visual", "red", 255, "Value from 0 - 255");
+		Property p_pingG = configuration.get("visual", "green", 0, "Value from 0 - 255");
+		Property p_pingB = configuration.get("visual", "blue", 0, "Value from 0 - 255");
+
+		pingR = verify(p_pingR);
+		pingG = verify(p_pingG);
+		pingB = verify(p_pingB);
+
+		pingBlockOverlay = configuration.get("visual", "blockOverlay", true, "Whether to render a colored overlay on the Pinged block").getBoolean();
+		pingMenuBackground = configuration.get("visual", "backgroundMenu", true, "Whether to render the Ping Menu background").getBoolean();
+		sound = configuration.get("general", "sound", true, "Whether to play a sound when a Ping is received").getBoolean();
+		pingAcceptDistance = configuration.get("general", "pingAcceptDistance", 64D, "Maximum distance a Ping can be from you and still be received").getDouble();
+		pingDuration = configuration.get("general", "pingDuration", 125, "How long a Ping should remain active before disappearing").getInt();
+
+		if (configuration.hasChanged())
+		{
+			configuration.save();
+		}
+	}
+
+	@Override
+	public void init(FMLInitializationEvent event)
+	{
+		super.init(event);
+	}
+
+	@Override
+	public void postInit(FMLPostInitializationEvent event)
+	{
+		super.postInit(event);
 	}
 
 	private int verify(Property property)

@@ -14,7 +14,7 @@ import java.util.List;
 public class SoundHandler
 {
     private static List<SoundEvent> sounds = Lists.newArrayList();
-    public static final SoundEvent PING_BLOOP = createSound("pingbloop");
+    public static final SoundEvent PING_BLOOP = createSound("bloop");
 
     private static SoundEvent createSound(String name)
     {

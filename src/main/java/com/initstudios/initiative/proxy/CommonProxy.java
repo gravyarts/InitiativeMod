@@ -40,9 +40,9 @@ public class CommonProxy {
 		config = new Configuration(new File(dir.getPath(), "initiative.cfg"));
 		InitiativeConfig.readCfg();
 
-		PacketHandler.initialize();
-
         RegistryHandler.registerEntities();
+
+		PacketHandler.initialize();
 	}
 
 	public void init(FMLInitializationEvent event)
@@ -72,6 +72,8 @@ public class CommonProxy {
 			}
 		});
 	}
+
+	public void syncConfig() {}
 
 	public void registerItemRenderer(Item item, int meta, String id) {}
 }

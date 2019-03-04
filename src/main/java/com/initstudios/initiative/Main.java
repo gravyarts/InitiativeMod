@@ -14,6 +14,7 @@ package com.initstudios.initiative;
 import com.initstudios.initiative.util.LoggingUtil;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -27,6 +28,7 @@ import com.initstudios.initiative.init.ModItems;
 import com.initstudios.initiative.proxy.ClientProxy;
 import com.initstudios.initiative.proxy.CommonProxy;
 import com.initstudios.initiative.util.Reference;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS, dependencies = Reference.DEPENDENCIES_FORGE, guiFactory = Reference.GUI_FACTORY)
 public class Main 
@@ -45,6 +47,8 @@ public class Main
        LoggingUtil.initiativeLogger = event.getModLog();
        LoggingUtil.info("Initiative Mod pre initialisation has begun! :D");
        proxy.preInit(event);
+
+       proxy.syncConfig();
     }
     @EventHandler
     public void init(FMLInitializationEvent event)
@@ -78,4 +82,13 @@ public class Main
 			return new ItemStack(ModBlocks.LB_D_FOAM_PATCH);
 		}
 	};
+
+    @SubscribeEvent
+    public static void onConfigChanged(ConfigChangedEvent.PostConfigChangedEvent event)
+    {
+        if (event.getModID().equals(Reference.MOD_ID))
+        {
+            proxy.syncConfig();
+        }
+    }
 }

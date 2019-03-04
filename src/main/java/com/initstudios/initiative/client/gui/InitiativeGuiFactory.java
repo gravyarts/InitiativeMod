@@ -1,5 +1,6 @@
 package com.initstudios.initiative.client.gui;
 
+import com.initstudios.initiative.proxy.ClientProxy;
 import com.initstudios.initiative.proxy.CommonProxy;
 import com.initstudios.initiative.util.Reference;
 import net.minecraft.client.gui.GuiScreen;
@@ -27,7 +28,9 @@ public class InitiativeGuiFactory extends DefaultGuiFactory
     private static List<IConfigElement> getElements()
     {
         List<IConfigElement> list = new ArrayList<>();
-        list.addAll((new ConfigElement(CommonProxy.config.getCategory("general"))).getChildElements());
+
+        list.addAll((new ConfigElement(ClientProxy.configuration.getCategory("general"))).getChildElements());
+        list.addAll((new ConfigElement(ClientProxy.configuration.getCategory("visual"))).getChildElements());
 
         return list;
     }
