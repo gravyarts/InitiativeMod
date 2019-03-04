@@ -6,6 +6,18 @@ import net.minecraft.util.math.BlockPos;
 
 public class PingWrapper
 {
+    public static PingWrapper readFromBuffer(ByteBuf buffer) 
+    {
+        int x = buffer.readInt();
+        int y = buffer.readInt();
+        int z = buffer.readInt();
+        int color = buffer.readInt();
+        
+        PingType type = PingType.values()[buffer.readInt()];
+        
+        return new PingWrapper(new BlockPos(x, y, z), color, type);
+    }
+
     public final BlockPos pos;
 
     public final int colour;
@@ -19,18 +31,6 @@ public class PingWrapper
 
     public int animationTimer = 20;
     public int timer;
-
-    public static PingWrapper readFromBuffer(ByteBuf buffer) 
-    {
-        int x = buffer.readInt();
-        int y = buffer.readInt();
-        int z = buffer.readInt();
-        int color = buffer.readInt();
-        
-        PingType type = PingType.values()[buffer.readInt()];
-        
-        return new PingWrapper(new BlockPos(x, y, z), color, type);
-    }
 
     public PingWrapper(BlockPos pos, int colour, PingType type)
     {

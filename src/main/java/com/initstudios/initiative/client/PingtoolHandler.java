@@ -220,7 +220,8 @@ public class PingtoolHandler
         }
     }
 
-    private static void renderPing(double px, double py, double pz, Entity renderEntity, PingWrapper ping) {
+    private static void renderPing(double px, double py, double pz, Entity renderEntity, PingWrapper ping)
+    {
         GlStateManager.pushMatrix();
 
         GlStateManager.disableDepth();
@@ -240,9 +241,11 @@ public class PingtoolHandler
 
         // Block Overlay Background
         bufferBuilder.begin(7, DefaultVertexFormats.POSITION_TEX_COLOR);
+
         int r = ping.colour >> 16 & 255;
         int g = ping.colour >> 8 & 255;
         int b = ping.colour & 255;
+
         bufferBuilder.pos(min, max, 0).tex(PingType.BACKGROUND.minU, PingType.BACKGROUND.maxV).color(r, g, b, 255).endVertex();
         bufferBuilder.pos(max, max, 0).tex(PingType.BACKGROUND.maxU, PingType.BACKGROUND.maxV).color(r, g, b, 255).endVertex();
         bufferBuilder.pos(max, min, 0).tex(PingType.BACKGROUND.maxU, PingType.BACKGROUND.minV).color(r, g, b, 255).endVertex();
