@@ -44,4 +44,6 @@ public class ModItems {
 	public static final Item LB_PG_NORMAL = new ItemPortalGun("lb_pg_normal");
 	public static final Item LB_LONG_FALL_BOOTS = new ArmorBase("lb_long_fall_boots", ARMOR_MATERIAL_STEEL_INGOT, 1, EntityEquipmentSlot.FEET);
 	public static final Item LB_GEL_SPEED_BALL = new ItemSpeedGelBall("lb_gel_speed_ball");
+	//Handheld
+	public static final Item HANDHELD_PG_00 = new ItemBase("handheld_pg_00");
 }

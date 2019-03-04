@@ -24,3 +24,8 @@ run
 logs
 crash-reports
 config
+saves
+
+# wildcards, may delete intended things, use carefully
+forge-*
+/*.json
