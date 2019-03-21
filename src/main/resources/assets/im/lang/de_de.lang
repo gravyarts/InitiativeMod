@@ -1,6 +1,7 @@
-itemGroup.initiative=Initiative Mod
+itemGroup.items=Items
+itemGroup.panels=Panele
 
-item.md_rock_refined.name=Raffinierter Mondstein
+item.md_rock_refined.name=Raffinierter Mondblock
 item.ow_bh_dust.name=Staub eines schwarzen Lochs
 item.ow_bh_unstable.name=Instabieles schwarzes Loch
 item.ow_bh_stable.name=Stabieles schwarzes Loch
@@ -8,27 +9,80 @@ item.ow_bh_crystal.name=Kristall eines schwarzen Lochs
 item.ow_steel_ingot.name=Stahlbarren
 item.ow_rfsteel_ingot.name=Raffinierter Stahlbarren
 item.lb_pg_normal.name=Portalkanone
-item.lb_gel_speed_ball.name=Antriebsgelball
-
-tile.ow_grass_thick.name=Dickes Gras
-tile.storage_cube.name=Gewichteter Speicherkubus
-tile.companion_cube.name=Gewichteter Begleiterkubus
+tile.ow_grass_thick.name=Disckes Gras
 tile.ow_steel_ore.name=Stahlerz
 tile.md_rock.name=Mondstein
 tile.md_ore.name=Monderz
-tile.md_hard.name=Moon Hard? Platzhalter
-tile.md_soft.name=Moon Soft? Platzhalter
+tile.md_hard.name=Mondhart
+tile.md_soft.name=Mondkies
 tile.md_stone.name=Mondstein
 tile.md_surface.name=Mondoberfläche
-tile.gel_speed.name=Antriebsgel
+
+tile.md_core.name=Mondker
+Handheld
+tile.handheld_00_pedestal.name=Portalkanonensockel
+
+
+tile.lb_cube_storage.name=Gewichteter Speicherkubus
+tile.lb_cube_companion.name=Gewichteter Begleiterkubus
+tile.lb_cube_button.name=Superkollisions-Superknopf
+
 tile.lb_gel_speed_dropper.name=Antriebsgelabwerfer
-tile.md_core.name=Mondkern
-tile.lb_block_1.name=Laborblock
-tile.lb_block_2.name=Laborblock
-tile.lb_block_3.name=Laborblock
-tile.lb_block_4.name=Laborblock
-tile.lb_block_5.name=Laborblock
-tile.lb_block_6_bottom.name=Laborblockunterseite
-tile.lb_block_6_top.name=Laborblockoberseite
+tile.lb_gel_jump_dropper.name=Abstoßgelabwerfer
+tile.lb_gel_white_dropper.name=Konvertierungsgelabwerfer
+tile.lb_cube_dropper.name=Kubusabwerfer
 
 entity.lb_gel_speed_ball.name=Antriebsgelball
+tile.gel_speed.name=Abstoßgel
+
+tile.lb_cl_panel_portable_top.name=Reines Panel (§bOberseite§f)
+tile.lb_cl_panel_portable_bottom.name=Reines Panel (§cUnterseite§f)
+tile.lb_cracked_panel_portable_top.name=Zerbrochenes Panel (§bOberseite§f)
+tile.lb_cracked_panel_portable_bottom.name=Zerbrochenes Panel (§cUnterseite§f)
+tile.lb_overtaken_panel_portable_top.name=Übergenommenes Panel (§bOberseite§f)
+tile.lb_overtaken_panel_portable_bottom.name=Übergenommenes Panel (§cUnterseiteB§f)
+tile.lb_vine_panel_portable_top.name=Vine Panel (§bOberseite§f)
+tile.lb_vine_panel_portable_bottom.name=Vine Panel (§cUnterseite§f)
+tile.lb_moss_panel_portable_top.name=Überwachsenes Panel (§bOberseite§f)
+tile.lb_moss_panel_portable_bottom.name=Überwachsenes Panel (§cUnterseite§f)
+tile.lb_scratched_panel_portable_top.name=Zerkratztes Panel (§bOberseite§f)
+tile.lb_scratched_panel_portable_bottom.name=Zerkratztes Panel (§cUnterseite§f)
+tile.lb_foam_panel_portable_top.name=Schaumgummi Panel (§bOberseite§f)
+tile.lb_foam_panel_portable_bottom.name=Schaumgummi Panel (§cUnterseite§f)
+tile.lb_faded_foam_panel_portable_top.name=Verblichenes Schaumgummi Panel (§bOberseite§f)
+tile.lb_faded_foam_panel_portable_bottom.name=Verblichenes Schaumgummi panel (§cUnterseite§f)
+tile.lb_foam_patch.name=Schaumgummi-Korrektur
+tile.lb_d_panel_portable_top.name=Dunkles Panel (§bOberseite§f)
+tile.lb_d_panel_portable_bottom.name=Dunkles Panel (§cUnterseite§f)
+tile.lb_d_faded_foam_panel_portable_top.name=Dunkles verblichenes Panel (§bOberseite§f)
+tile.lb_d_faded_foam_panel_portable_bottom.name=Dunkles verblichenes Panel (§cUnterseite§f)
+tile.lb_d_moss_panel_portable_top.name=Dunkles überwachsenes Panel (§bOberseite§f)
+tile.lb_d_moss_panel_portable_bottom.name=Dunkles überwachsenes Panel (§cUnterseite§f)
+tile.lb_d_foam_patch.name=Dunkler Schaumgummi-Korrektur
+
+tile.lb_cl_panel_top.name=Reines Panel (§bOberseite§f)
+tile.lb_cl_panel_bottom.name=Reines Panel (§cUnterseite§f)
+tile.lb_cross_panel_top.name=Kreuzpanel (§bOberseite§f)
+tile.lb_cross_panel_bottom.name=Kreuzpanel (§cUnterseite§f)
+tile.lb_cube_panel_top.name=Würfelpanel (§bOberseite§f)
+tile.lb_cube_panel_bottom.name=Würfelpanel (§cUnterseite§f)
+tile.lb_scratched_panel_top.name=Zerkratztes Panel (§bOberseite§f)
+tile.lb_scratched_panel_bottom.name=Zerkratztes Panel (§cUnterseite§f)
+tile.lb_cracked_panel_top.name=Zerbrochenes Panel (§bOberseite§f)
+tile.lb_cracked_panel_bottom.name=Zerbrochenes Panel (§cUnterseite§f)
+tile.lb_faded_foam_panel_top.name=Verblichenes Schaumgummi Panel (§bOberseite§f)
+tile.lb_faded_foam_panel_bottom.name=Verblichnenes Schaumgummi (§cUnterseite§f)
+tile.lb_cross_vine_panel_top.name=Kreuz Vine Panel (§bOberseite§f)
+tile.lb_cross_vine_panel_bottom.name=Kreuz Vine Panel (§cUnterseite§f)
+tile.lb_overtaken_panel_top.name=Übernommenes Panel (§bOberseite§f)
+tile.lb_overtaken_panel_bottom.name=Übernommenes Panel (§cUnterseite§f)
+
+key.categories.ping=Ping
+
+key.ping=Opens Pingmenü
+im.ping.key.alert=Ping (Alarm)
+im.ping.key.mine=Ping (Mine)
+im.ping.key.look=Ping (Schau)
+im.ping.key.goto=Ping (Gehe zu)
+
+pingtool.subtitle.bloop=Ping bloops
