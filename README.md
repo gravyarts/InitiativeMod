@@ -1,6 +1,6 @@
 # Initiative Mod ![](https://img.shields.io/badge/InitStudios-Official-brightgreen.svg) ![](https://img.shields.io/badge/Minecraft-1.12.2-green.svg) [![](https://img.shields.io/github/license/Asc4Yin/InitiativeMod.svg)](https://github.com/Asc4Yin/InitiativeMod/LICENSE.md) ![https://discord.gg/Sh3y6HK](https://img.shields.io/discord/482004557379928065.svg)
 
-##### The Initiative Mod is a Portal 2 themed mod for Minecraft Forge, created by Init Studios.
+##### The Initiative Mod is a Portal 2 themed mod for Minecraft Forge, created by Init Studios (in collaboration with Fractal Studios).
 
 ## Table Of Contents
 
