@@ -30,8 +30,8 @@ public class ModBlocks {
 	public static final Block MD_ORE = new BlockBase("md_ore",Material.IRON);
 	public static final Block MD_ROCK = new BlockBase("md_rock",Material.IRON);
 	//Normal
-	public static final Block OW_STEEL_ORE = new OWSteelOre("ow_steel_ore",Material.IRON);
-	public static final Block OW_GRASS_THICK = new OWGrassThick("ow_grass_thick",Material.IRON);
+	public static final Block OW_STEEL_ORE = new BlockBase("ow_steel_ore",Material.IRON);
+	public static final Block OW_GRASS_THICK = new BlockBase ("ow_grass_thick",Material.IRON);
 	//Cubes
  	public static final Block LB_CUBE_STORAGE = new LBCubes("lb_cube_storage", Material.ANVIL);
  	public static final Block LB_CUBE_COMPANION = new LBCubes("lb_cube_companion", Material.ANVIL);

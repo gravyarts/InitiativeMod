@@ -1,6 +1,6 @@
 {
    "parent": "item/generated",
    "textures": {
-       "layer0": "im:items/ow_rfsteel_ingot"
+       "layer0": "im:overworld/ow_rfsteel_ingot"
    }
 }
