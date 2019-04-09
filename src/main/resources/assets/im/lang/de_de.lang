@@ -9,7 +9,7 @@ item.ow_bh_crystal.name=Kristall eines schwarzen Lochs
 item.ow_steel_ingot.name=Stahlbarren
 item.ow_rfsteel_ingot.name=Raffinierter Stahlbarren
 item.lb_pg_normal.name=Portalkanone
-tile.ow_grass_thick.name=Disckes Gras
+tile.ow_grass_thick.name=Dickes Gras
 tile.ow_steel_ore.name=Stahlerz
 tile.md_rock.name=Mondstein
 tile.md_ore.name=Monderz
@@ -18,7 +18,7 @@ tile.md_soft.name=Mondkies
 tile.md_stone.name=Mondstein
 tile.md_surface.name=Mondoberfläche
 
-tile.md_core.name=Mondker
+tile.md_core.name=Mondkern
 Handheld
 tile.handheld_00_pedestal.name=Portalkanonensockel
 
