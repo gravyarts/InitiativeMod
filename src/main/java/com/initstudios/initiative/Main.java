@@ -23,8 +23,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-import com.initstudios.initiative.init.ModBlocks;
-import com.initstudios.initiative.init.ModItems;
+import com.initstudios.initiative.common.init.ModBlocks;
+import com.initstudios.initiative.common.init.ModItems;
 import com.initstudios.initiative.proxy.ClientProxy;
 import com.initstudios.initiative.proxy.CommonProxy;
 import com.initstudios.initiative.util.Reference;
@@ -68,26 +68,22 @@ public class Main
     
     public static CreativeTabs items = new CreativeTabs("items")
 	{
-		@Override
-		public ItemStack getTabIconItem() 
-		{
-			return new ItemStack(ModItems.OW_BH_UNSTABLE);
-		}
-	};
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModItems.OW_BH_UNSTABLE);
+        }
+    };
     public static CreativeTabs panels = new CreativeTabs("panels")
 	{
-		@Override
-		public ItemStack getTabIconItem() 
-		{
-			return new ItemStack(ModBlocks.PANEL_SURFACE_01
-            );
-		}
-	};
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModBlocks.PANEL_SURFACE_01);
+        }
+    };
     public static CreativeTabs borealis = new CreativeTabs("borealis")
     {
         @Override
-        public ItemStack getTabIconItem()
-        {
+        public ItemStack createIcon() {
             return new ItemStack(ModBlocks.BOREALIS_HULL_01);
         }
     };

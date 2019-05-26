@@ -11,9 +11,9 @@
 
 package com.initstudios.initiative.util.handlers;
 
-import com.initstudios.initiative.entity.projectile.EntitySpeedGelBall;
-import com.initstudios.initiative.init.ModBlocks;
-import com.initstudios.initiative.init.ModItems;
+import com.initstudios.initiative.common.entity.projectile.EntitySpeedGelBall;
+import com.initstudios.initiative.common.init.ModBlocks;
+import com.initstudios.initiative.common.init.ModItems;
 import com.initstudios.initiative.util.IHasModel;
 
 import com.initstudios.initiative.util.Reference;

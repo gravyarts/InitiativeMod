@@ -10,10 +10,11 @@ import net.minecraftforge.fml.relauncher.Side;
 public class PacketHandler
 {
     public static final SimpleNetworkWrapper INSTANCE = NetworkRegistry.INSTANCE.newSimpleChannel(Reference.MOD_ID);
+    private static int id = -1;
 
     public static void initialize()
     {
-        INSTANCE.registerMessage(ClientSendPing.class, ClientSendPing.class, 0, Side.SERVER);
-        INSTANCE.registerMessage(ServerBroadcastPing.class, ServerBroadcastPing.class, 1, Side.CLIENT);
+        INSTANCE.registerMessage(ClientSendPing.class, ClientSendPing.class, id++, Side.SERVER);
+        INSTANCE.registerMessage(ServerBroadcastPing.class, ServerBroadcastPing.class, id++, Side.CLIENT);
     }
 }

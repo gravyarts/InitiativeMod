@@ -11,8 +11,8 @@
 
 package com.initstudios.initiative.util.render;
 
-import com.initstudios.initiative.entity.projectile.EntitySpeedGelBall;
-import com.initstudios.initiative.model.ModelGelBall;
+import com.initstudios.initiative.common.entity.projectile.EntitySpeedGelBall;
+import com.initstudios.initiative.client.model.ModelGelBall;
 import com.initstudios.initiative.util.Reference;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.Render;

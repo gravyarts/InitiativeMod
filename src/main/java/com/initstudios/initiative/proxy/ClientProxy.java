@@ -11,7 +11,7 @@
 
 package com.initstudios.initiative.proxy;
 
-import com.initstudios.initiative.entity.projectile.EntitySpeedGelBall;
+import com.initstudios.initiative.common.entity.projectile.EntitySpeedGelBall;
 import com.initstudios.initiative.keybinds.PingtoolKeybindHandler;
 import com.initstudios.initiative.network.PacketHandler;
 import com.initstudios.initiative.network.packet.ClientSendPing;
