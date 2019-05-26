@@ -1,7 +1,6 @@
 package com.initstudios.initiative.common.items;
 
 import com.initstudios.initiative.Main;
-import com.initstudios.initiative.common.init.ModItems;
 import com.initstudios.initiative.util.IHasModel;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -16,12 +15,9 @@ import net.minecraft.world.World;
 
 public class ItemPortalGun extends Item implements IHasModel
 {
-    public ItemPortalGun(String name)
+    public ItemPortalGun()
     {
         super();
-
-        setTranslationKey(name);
-        setRegistryName(name);
         setCreativeTab(Main.items);
 
         maxStackSize = 1;

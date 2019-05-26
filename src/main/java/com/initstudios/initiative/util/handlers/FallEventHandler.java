@@ -11,8 +11,7 @@
 
 package com.initstudios.initiative.util.handlers;
 
-import com.initstudios.initiative.common.init.ModItems;
-
+import com.initstudios.initiative.common.items.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraftforge.event.entity.living.LivingFallEvent;

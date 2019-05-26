@@ -12,7 +12,7 @@
 package com.initstudios.initiative.proxy;
 
 import com.initstudios.initiative.common.entity.projectile.EntitySpeedGelBall;
-import com.initstudios.initiative.common.init.ModItems;
+import com.initstudios.initiative.common.items.ModItems;
 import com.initstudios.initiative.network.PacketHandler;
 import com.initstudios.initiative.util.InitiativeConfig;
 import com.initstudios.initiative.util.handlers.RegistryHandler;

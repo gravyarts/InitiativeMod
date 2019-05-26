@@ -12,8 +12,7 @@
 package com.initstudios.initiative.common.blocks;
 
 import com.initstudios.initiative.Main;
-import com.initstudios.initiative.common.init.ModBlocks;
-import com.initstudios.initiative.common.init.ModItems;
+import com.initstudios.initiative.common.items.ModItems;
 import com.initstudios.initiative.util.IHasModel;
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.SoundType;

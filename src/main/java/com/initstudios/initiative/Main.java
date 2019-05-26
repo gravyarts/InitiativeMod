@@ -11,7 +11,12 @@
 
 package com.initstudios.initiative;
 
+import com.initstudios.initiative.common.blocks.ModBlocks;
+import com.initstudios.initiative.common.items.ModItems;
+import com.initstudios.initiative.proxy.ClientProxy;
+import com.initstudios.initiative.proxy.CommonProxy;
 import com.initstudios.initiative.util.LoggingUtil;
+import com.initstudios.initiative.util.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
@@ -22,12 +27,6 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-
-import com.initstudios.initiative.common.init.ModBlocks;
-import com.initstudios.initiative.common.init.ModItems;
-import com.initstudios.initiative.proxy.ClientProxy;
-import com.initstudios.initiative.proxy.CommonProxy;
-import com.initstudios.initiative.util.Reference;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS, dependencies = Reference.DEPENDENCIES_FORGE, guiFactory = Reference.GUI_FACTORY)
@@ -45,6 +44,7 @@ public class Main
     public void preInit(FMLPreInitializationEvent event)
     {
        LoggingUtil.initiativeLogger = event.getModLog();
+       ModItems.init();
        LoggingUtil.info("Initiative Mod pre initialisation has begun! :D");
        proxy.preInit(event);
 

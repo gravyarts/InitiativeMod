@@ -9,16 +9,15 @@
     Init Studios.
  */
 
-package com.initstudios.initiative.common.init;
+package com.initstudios.initiative.common.blocks;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.initstudios.initiative.common.blocks.*;
 import com.initstudios.initiative.common.blocks.gels.LBGelSpeed;
 import com.initstudios.initiative.common.blocks.gels.MaterialGel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ModBlocks {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();

@@ -12,16 +12,12 @@
 package com.initstudios.initiative.common.items;
 
 import com.initstudios.initiative.Main;
-import com.initstudios.initiative.common.init.ModItems;
 import com.initstudios.initiative.util.IHasModel;
-
 import net.minecraft.item.Item;
 
 public class ItemBase extends Item implements IHasModel {
 
-	public ItemBase(String name) {
-		setTranslationKey(name);
-		setRegistryName(name);
+	public ItemBase() {
 		setCreativeTab(Main.items);
 		
 		ModItems.ITEMS.add(this);
