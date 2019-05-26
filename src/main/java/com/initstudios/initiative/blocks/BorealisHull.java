@@ -11,16 +11,19 @@
 
 package com.initstudios.initiative.blocks;
 
+import com.initstudios.initiative.Main;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
-public class LBScreen extends LaboratoryBlocks {
+public class BorealisHull extends BlockBase {
 
-	public LBScreen(String name, Material material) {
-		super(name, material);
-		// TODO Auto-generated constructor stub
-		setSoundType(SoundType.STONE);
-		setHardness(0F);
-		setResistance(0F);
-	}
+    public BorealisHull(String name, Material material) {
+        super(name, material);
+        // TODO Auto-generated constructor stub
+        setSoundType(SoundType.STONE);
+        setCreativeTab(Main.borealis);
+        setHardness(5F);
+        setResistance(10F);
+        this.setHarvestLevel("pickaxe", 2);
+    }
 }

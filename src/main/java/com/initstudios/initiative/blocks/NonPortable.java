@@ -14,9 +14,9 @@ package com.initstudios.initiative.blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
-public class LBScreen extends LaboratoryBlocks {
+public class NonPortable extends LaboratoryBlocks {
 
-	public LBScreen(String name, Material material) {
+	public NonPortable(String name, Material material) {
 		super(name, material);
 		// TODO Auto-generated constructor stub
 		setSoundType(SoundType.STONE);

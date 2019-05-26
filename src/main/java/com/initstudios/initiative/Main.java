@@ -79,9 +79,18 @@ public class Main
 		@Override
 		public ItemStack getTabIconItem() 
 		{
-			return new ItemStack(ModBlocks.LB_D_FOAM_PATCH);
+			return new ItemStack(ModBlocks.PANEL_SURFACE_01
+            );
 		}
 	};
+    public static CreativeTabs borealis = new CreativeTabs("borealis")
+    {
+        @Override
+        public ItemStack getTabIconItem()
+        {
+            return new ItemStack(ModBlocks.BOREALIS_HULL_01);
+        }
+    };
 
     @SubscribeEvent
     public static void onConfigChanged(ConfigChangedEvent.PostConfigChangedEvent event)

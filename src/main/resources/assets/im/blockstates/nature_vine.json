@@ -1,0 +1,29 @@
+{
+    "variants":
+    {
+        "facing=up":
+        {
+            "model": "im:nature_vine"
+        },
+
+        "facing=south":
+        {
+            "model": "im:nature_vine"
+        },
+
+        "facing=east":
+        {
+            "model": "im:nature_vine","y":270
+        },
+
+        "facing=west":
+        {
+            "model": "im:nature_vine","y":90
+        },
+
+        "facing=north":
+        {
+            "model": "im:nature_vine","y":180
+        }
+    }
+}

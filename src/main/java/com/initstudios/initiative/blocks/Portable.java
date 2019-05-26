@@ -13,10 +13,14 @@ package com.initstudios.initiative.blocks;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.IProperty;
+import net.minecraft.block.properties.PropertyDirection;
+import net.minecraft.block.state.BlockStateContainer;
+import net.minecraft.util.EnumFacing;
 
-public class LBScreen extends LaboratoryBlocks {
+public class Portable extends LaboratoryBlocks {
 
-	public LBScreen(String name, Material material) {
+	public Portable(String name, Material material) {
 		super(name, material);
 		// TODO Auto-generated constructor stub
 		setSoundType(SoundType.STONE);

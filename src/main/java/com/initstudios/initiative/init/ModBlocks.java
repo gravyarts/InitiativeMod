@@ -21,74 +21,33 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
 public class ModBlocks {
-	//Moon
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
-	public static final Block MD_SURFACE = new BlockBase("md_surface",Material.IRON);
-	public static final Block MD_STONE = new BlockBase("md_stone",Material.IRON);
-	public static final Block MD_SOFT = new BlockBase("md_soft",Material.IRON);
-	public static final Block MD_HARD = new BlockBase("md_hard",Material.IRON);
-	public static final Block MD_ORE = new BlockBase("md_ore",Material.IRON);
-	public static final Block MD_ROCK = new BlockBase("md_rock",Material.IRON);
-	//Normal
-	public static final Block OW_STEEL_ORE = new BlockBase("ow_steel_ore",Material.IRON);
-	public static final Block OW_GRASS_THICK = new BlockBase ("ow_grass_thick",Material.IRON);
 	//Cubes
- 	public static final Block LB_CUBE_STORAGE = new LBCubes("lb_cube_storage", Material.ANVIL);
- 	public static final Block LB_CUBE_COMPANION = new LBCubes("lb_cube_companion", Material.ANVIL);
- 	//Laboratory
- 	public static final Block LB_FOAM_PATCH = new LBPanelPortable("lb_foam_patch", Material.IRON);
- 	public static final Block LB_D_FOAM_PATCH = new LBPanelPortable("lb_d_foam_patch", Material.IRON);
- 	public static final Block LB_cube_button = new LBButton("lb_cube_button", Material.IRON);
- 	//Handheld
- 	public static final Block HANDHELD_00_PEDESTAL = new HandheldPedestal("handheld_00_pedestal", Material.IRON);
+ 	public static final Block CUBE_HEART_OFF = new LBCubes("cube_heart_off", Material.ANVIL);
+ 	public static final Block CUBE_STORAGE_OFF = new LBCubes("cube_storage_off", Material.ANVIL);
+ 	public static final Block CUBE_REFLECT = new LBCubes("cube_reflect", Material.ANVIL);
  	//Dropper
  	public static final Block LB_GEL_JUMP_DROPPER = new LBDropper("lb_gel_jump_dropper", Material.IRON);
  	public static final Block LB_GEL_SPEED_DROPPER = new LBDropper("lb_gel_speed_dropper", Material.IRON);
  	public static final Block LB_GEL_WHITE_DROPPER = new LBDropper("lb_gel_white_dropper", Material.IRON);
  	public static final Block LB_CUBE_DROPPER = new LBDropper("lb_cube_dropper", Material.IRON);
-	//Special
-	public static final Block LB_SCREEN = new LBScreen("lb_screen", Material.IRON);
 	//Gel
+	//GEL_SPEED needs fixing <3
 	public static final Block GEL_SPEED = new LBGelSpeed("gel_speed", MaterialGel.GEL);
-	//Bottom Portable
-	public static final Block LB_CL_PANEL_PORTABLE_BOTTOM = new LBPanelPortable("lb_cl_panel_portable_bottom", Material.IRON);
-	public static final Block LB_CRACKED_PANEL_PORTABLE_BOTTOM = new LBPanelPortable("lb_cracked_panel_portable_bottom", Material.IRON);
-	public static final Block LB_SCRATCHED_PANEL_PORTABLE_BOTTOM = new LBPanelPortable("lb_scratched_panel_portable_bottom", Material.IRON);
-	public static final Block LB_OVERTAKEN_PANEL_PORTABLE_BOTTOM = new LBPanelPortable("lb_overtaken_panel_portable_bottom", Material.IRON);
-	public static final Block LB_MOSS_PANEL_PORTABLE_BOTTOM = new LBPanelPortable("lb_moss_panel_portable_bottom", Material.IRON);
-	public static final Block LB_VINE_PANEL_PORTABLE_BOTTOM = new LBPanelPortable("lb_vine_panel_portable_bottom", Material.IRON);
-	public static final Block LB_FOAM_PANEL_PORTABLE_BOTTOM = new LBPanelPortable("lb_foam_panel_portable_bottom", Material.IRON);
-	public static final Block LB_FADED_FOAM_PANEL_PORTABLE_BOTTOM = new LBPanelPortable("lb_faded_foam_panel_portable_bottom", Material.IRON);
-	public static final Block LB_D_FADED_FOAM_PANEL_PORTABLE_BOTTOM = new LBPanelPortable("lb_d_faded_foam_panel_portable_bottom", Material.IRON);
-	public static final Block LB_D_PANEL_PORTABLE_BOTTOM = new LBPanelPortable("lb_d_panel_portable_bottom", Material.IRON);
-	//Top Portable
-	public static final Block LB_CL_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_cl_panel_portable_top", Material.IRON);
-	public static final Block LB_CRACKED_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_cracked_panel_portable_top", Material.IRON);
-	public static final Block LB_SCRATCHED_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_scratched_panel_portable_top", Material.IRON);
-	public static final Block LB_OVERTAKEN_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_overtaken_panel_portable_top", Material.IRON);
-	public static final Block LB_MOSS_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_moss_panel_portable_top", Material.IRON);
-	public static final Block LB_VINE_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_vine_panel_portable_top", Material.IRON);
-	public static final Block LB_FOAM_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_foam_panel_portable_top", Material.IRON);
-	public static final Block LB_FADED_FOAM_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_faded_foam_panel_portable_top", Material.IRON);
-	public static final Block LB_D_FADED_FOAM_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_d_faded_foam_panel_portable_top", Material.IRON);
-	public static final Block LB_D_MOSS_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_d_moss_panel_portable_top", Material.IRON);
-	public static final Block LB_D_PANEL_PORTABLE_TOP = new LBPanelPortable("lb_d_panel_portable_top", Material.IRON);
-	//Bottom NonPortable
-	public static final Block LB_CL_PANEL_BOTTOM = new LBPanelNonPortable("lb_cl_panel_bottom", Material.IRON);
-	public static final Block LB_CROSS_PANEL_BOTTOM = new LBPanelNonPortable("lb_cross_panel_bottom",Material.IRON);
-	public static final Block LB_CUBE_PANEL_BOTTOM = new LBPanelNonPortable("lb_cube_panel_bottom",Material.IRON);
-	public static final Block LB_SCRATCHED_PANEL_BOTTOM = new LBPanelNonPortable("lb_scratched_panel_bottom",Material.IRON);
-	public static final Block LB_CRACKED_PANEL_BOTTOM = new LBPanelNonPortable("lb_cracked_panel_bottom",Material.IRON);
-	public static final Block LB_FADED_FOAM_PANEL_BOTTOM = new LBPanelNonPortable("lb_faded_foam_panel_bottom",Material.IRON);
-	public static final Block LB_CROSS_VINE_PANEL_BOTTOM = new LBPanelNonPortable("lb_cross_vine_panel_bottom",Material.IRON);
-	public static final Block LB_OVERTAKEN_PANEL_BOTTOM = new LBPanelNonPortable("lb_overtaken_panel_bottom",Material.IRON);
-	//Top NonPortable
-	public static final Block LB_CL_PANEL_TOP = new LBPanelNonPortable("lb_cl_panel_top", Material.IRON);
-	public static final Block LB_CROSS_PANEL_TOP = new LBPanelNonPortable("lb_cross_panel_top",Material.IRON);
-	public static final Block LB_CUBE_PANEL_TOP = new LBPanelNonPortable("lb_cube_panel_top",Material.IRON);
-	public static final Block LB_SCRATCHED_PANEL_TOP = new LBPanelNonPortable("lb_scratched_panel_top",Material.IRON);
-	public static final Block LB_CRACKED_PANEL_TOP = new LBPanelNonPortable("lb_cracked_panel_top",Material.IRON);
-	public static final Block LB_FADED_FOAM_PANEL_TOP = new LBPanelNonPortable("lb_faded_foam_panel_top",Material.IRON);
-	public static final Block LB_CROSS_VINE_PANEL_TOP = new LBPanelNonPortable("lb_cross_vine_panel_top",Material.IRON);
-	public static final Block LB_OVERTAKEN_PANEL_TOP = new LBPanelNonPortable("lb_overtaken_panel_top",Material.IRON);
+	//Lab Blocks
+	public static final Block PANEL_SURFACE_01 = new Portable("panel_surface_01", Material.IRON);
+	public static final Block PANEL_SURFACE_02 = new Portable("panel_surface_02", Material.IRON);
+	public static final Block PANEL_SURFACE_11 = new NonPortable("panel_surface_11", Material.IRON);
+	public static final Block PANEL_SURFACE_12 = new NonPortable("panel_surface_12", Material.IRON);
+	public static final Block PANEL_SURFACE_21 = new NonPortable("panel_surface_21", Material.IRON);
+	public static final Block PANEL_SURFACE_22 = new NonPortable("panel_surface_22", Material.IRON);
+	public static final Block PANEL_SURFACE_31 = new Portable("panel_surface_31", Material.IRON);
+	//Borealis Blocks
+	public static final Block BOREALIS_HULL_01 = new BorealisHull("borealis_hull_01", Material.IRON);
+	public static final Block BOREALIS_HULL_02 = new BorealisHull("borealis_hull_02", Material.IRON);
+	public static final Block BOREALIS_HULL_03 = new BorealisHull("borealis_hull_03", Material.IRON);
+	public static final Block BOREALIS_DECK_01 = new BorealisDecoration("borealis_deck_01", Material.IRON);
+	public static final Block BOREALIS_STRUCTURE_01 = new BorealisDecoration("borealis_structure_01", Material.IRON);
+	public static final Block BOREALIS_STACK_01 = new BorealisDecoration("borealis_stack_01", Material.IRON);
+	public static final Block BOREALIS_STACK_02 = new BorealisDecoration("borealis stack_02", Material.IRON);
 }

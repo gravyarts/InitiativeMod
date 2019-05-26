@@ -1,31 +1,10 @@
 itemGroup.items=Items
 itemGroup.panels=Panels
+itemGroup.borealis=Borealis
 
-item.md_rock_refined.name=Refined Moon Rock
-item.ow_bh_dust.name=Black Hole Dust
-item.ow_bh_unstable.name=Unstable Black Hole
-item.ow_bh_stable.name=Stable Black Hole
-item.ow_bh_crystal.name=Black Hole Crystal
-item.ow_steel_ingot.name=Steel Ingot
-item.ow_rfsteel_ingot.name=Refined Steel Ingot
-item.lb_pg_normal.name=Portal Gun
-tile.ow_grass_thick.name=Thick Grass
-tile.ow_steel_ore.name=Steel Ore
-tile.md_rock.name=Moon Rock
-tile.md_ore.name=Moon Ore
-tile.md_hard.name=Moon Hard
-tile.md_soft.name=Moon Gravel
-tile.md_stone.name=Moon Stone
-tile.md_surface.name=Moon Surface
-
-tile.md_core.name=Moon Core
-Handheld
-tile.handheld_00_pedestal.name=Portal Gun Pedestal
-
-
-tile.lb_cube_storage.name=Storage Cube
-tile.lb_cube_companion.name=Companion Cube
-tile.lb_cube_button.name=Super-Colliding Button
+tile.cube_heart_off.name=Heart Cube
+tile.cube_storage_off.name=Storage Cube
+tile.cube_reflect.name=Reflection Cube
 
 tile.lb_gel_speed_dropper.name=Propulsion Gel Dropper
 tile.lb_gel_jump_dropper.name=Repulsion Gel Dropper
@@ -35,47 +14,12 @@ tile.lb_cube_dropper.name=Cube Dropper
 entity.lb_gel_speed_ball.name=Propulsion Gel Ball
 tile.gel_speed.name=Propulsion Gel
 
-tile.lb_cl_panel_portable_top.name=Clean Panel (§bTop§f)
-tile.lb_cl_panel_portable_bottom.name=Clean Panel (§cBottom§f)
-tile.lb_cracked_panel_portable_top.name=Cracked Panel (§bTop§f)
-tile.lb_cracked_panel_portable_bottom.name=Cracked Panel (§cBottom§f)
-tile.lb_overtaken_panel_portable_top.name=Overtaken Panel (§bTop§f)
-tile.lb_overtaken_panel_portable_bottom.name=Overtaken Panel (§cBottom§f)
-tile.lb_vine_panel_portable_top.name=Vine Panel (§bTop§f)
-tile.lb_vine_panel_portable_bottom.name=Vine Panel (§cBottom§f)
-tile.lb_moss_panel_portable_top.name=Moss Panel (§bTop§f)
-tile.lb_moss_panel_portable_bottom.name=Moss Panel (§cBottom§f)
-tile.lb_scratched_panel_portable_top.name=Scratched Panel (§bTop§f)
-tile.lb_scratched_panel_portable_bottom.name=Scratched Panel (§cBottom§f)
-tile.lb_foam_panel_portable_top.name=Foam Panel (§bTop§f)
-tile.lb_foam_panel_portable_bottom.name=Foam Panel (§cBottom§f)
-tile.lb_faded_foam_panel_portable_top.name=Faded Foam Panel (§bTop§f)
-tile.lb_faded_foam_panel_portable_bottom.name=Faded Foam panel (§cBottom§f)
-tile.lb_foam_patch.name=Foam Patch
-tile.lb_d_panel_portable_top.name=Dark Panel (§bTop§f)
-tile.lb_d_panel_portable_bottom.name= Dark Panel (§cBottom§f)
-tile.lb_d_faded_foam_panel_portable_top.name=Dark Faded Panel (§bTop§f)
-tile.lb_d_faded_foam_panel_portable_bottom.name=Dark Faded Panel (§cBottom§f)
-tile.lb_d_moss_panel_portable_top.name=Dark Moss Panel (§bTop§f)
-tile.lb_d_moss_panel_portable_bottom.name=Dark Moss Panel (§cBottom§f)
-tile.lb_d_foam_patch.name=Dark Foam Patch
-
-tile.lb_cl_panel_top.name=Clean Panel (§bTop§f)
-tile.lb_cl_panel_bottom.name=Clean Panel (§cBottom§f)
-tile.lb_cross_panel_top.name=Cross Panel (§bTop§f)
-tile.lb_cross_panel_bottom.name=Cross Panel (§cBottom§f)
-tile.lb_cube_panel_top.name=Cube Panel (§bTop§f)
-tile.lb_cube_panel_bottom.name=Cube Panel (§cBottom§f)
-tile.lb_scratched_panel_top.name=Scratched Panel (§bTop§f)
-tile.lb_scratched_panel_bottom.name=Scratched Panel (§cBottom§f)
-tile.lb_cracked_panel_top.name=Cracked Panel (§bTop§f)
-tile.lb_cracked_panel_bottom.name=Cracked Panel (§cBottom§f)
-tile.lb_faded_foam_panel_top.name=Faded Foam Panel (§bTop§f)
-tile.lb_faded_foam_panel_bottom.name=Faded Foam Panel (§cBottom§f)
-tile.lb_cross_vine_panel_top.name=Cross Vine Panel (§bTop§f)
-tile.lb_cross_vine_panel_bottom.name=Cross Vine Panel (§cBottom§f)
-tile.lb_overtaken_panel_top.name=Overtaken Panel (§bTop§f)
-tile.lb_overtaken_panel_bottom.name=Overtaken Panel (§cBottom§f)
+tile.panel_surface_01.name=Panel Surface
+tile.panel_surface_02.name=Panel Surface
+tile.panel_surface_11.name=Panel Surface
+tile.panel_surface_12.name=Panel Surface
+tile.panel_surface_21.name=Panel Surface
+tile.panel_surface_22.name=Panel Surface
 
 key.categories.ping=Ping
 
