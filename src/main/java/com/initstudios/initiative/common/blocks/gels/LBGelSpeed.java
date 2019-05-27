@@ -30,6 +30,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class LBGelSpeed extends Block implements IHaveItem {
 
+    protected static final AxisAlignedBB GEL_SPEED_AABB_2 = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.0625D, 1.0D);
     private static final AxisAlignedBB GEL_SPEED_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.125D, 1.0D);
 
     public LBGelSpeed(Material material)
@@ -41,7 +42,7 @@ public class LBGelSpeed extends Block implements IHaveItem {
 
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
-        return GEL_SPEED_AABB;
+        return GEL_SPEED_AABB_2;
     }
 
     public boolean isOpaqueCube(IBlockState state)
@@ -54,7 +55,7 @@ public class LBGelSpeed extends Block implements IHaveItem {
         return false;
     }
 
-    public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn)
+    public void onEntityCollision(World worldIn, BlockPos pos, IBlockState state, Entity entityIn)
     {
         entityIn.motionX *= 1.265D;
         entityIn.motionZ *= 1.265D;
