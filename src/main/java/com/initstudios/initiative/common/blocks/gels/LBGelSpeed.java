@@ -11,10 +11,7 @@
 
 package com.initstudios.initiative.common.blocks.gels;
 
-import com.initstudios.initiative.Main;
-import com.initstudios.initiative.common.blocks.ModBlocks;
-import com.initstudios.initiative.common.items.ModItems;
-import com.initstudios.initiative.util.IHasModel;
+import com.initstudios.initiative.util.IHaveItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
@@ -31,22 +28,15 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class LBGelSpeed extends Block implements IHasModel {
+public class LBGelSpeed extends Block implements IHaveItem {
 
     private static final AxisAlignedBB GEL_SPEED_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.125D, 1.0D);
 
-    public LBGelSpeed(String name, Material material)
+    public LBGelSpeed(Material material)
     {
         super(material, MapColor.ORANGE_STAINED_HARDENED_CLAY);
-
-        setTranslationKey(name);
-        setRegistryName(name);
-        setCreativeTab(Main.items);
         setResistance(1.0F);
         setHardness(0.5F);
-
-        ModBlocks.BLOCKS.add(this);
-        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
@@ -119,8 +109,7 @@ public class LBGelSpeed extends Block implements IHasModel {
     }
 
     @Override
-    public void registerModels()
-    {
-        Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+    public Item getItem() {
+        return new ItemBlock(this).setRegistryName(getRegistryName());
     }
 }

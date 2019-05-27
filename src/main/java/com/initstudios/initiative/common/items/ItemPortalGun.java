@@ -1,7 +1,5 @@
 package com.initstudios.initiative.common.items;
 
-import com.initstudios.initiative.Main;
-import com.initstudios.initiative.util.IHasModel;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumAction;
@@ -13,17 +11,15 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class ItemPortalGun extends Item implements IHasModel
+public class ItemPortalGun extends Item
 {
     public ItemPortalGun()
     {
         super();
-        setCreativeTab(Main.items);
 
         maxStackSize = 1;
         setMaxDamage(0);
 
-        ModItems.ITEMS.add(this);
     }
 
     public boolean onBlockStartBreak(ItemStack itemstack, BlockPos pos, EntityPlayer player)
@@ -49,11 +45,5 @@ public class ItemPortalGun extends Item implements IHasModel
     public int getMaxItemUseDuration(ItemStack stack)
     {
         return 2147483647;
-    }
-
-    @Override
-    public void registerModels()
-    {
-        Main.proxy.registerItemRenderer(this, 0, "inventory");
     }
 }

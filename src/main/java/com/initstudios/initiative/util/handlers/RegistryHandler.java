@@ -16,9 +16,11 @@ import com.initstudios.initiative.common.entity.projectile.EntitySpeedGelBall;
 import com.initstudios.initiative.common.items.ModItems;
 import com.initstudios.initiative.util.Reference;
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.EntityEntry;
@@ -29,15 +31,10 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 public class RegistryHandler {
 
 	@SubscribeEvent
-	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
-		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
-	}
-
-	@SubscribeEvent
-	public static void onModelRegister(ModelRegistryEvent event) {
+	public static void onModelRegister(ModelRegistryEvent e) {
 		ModItems.registerRenders();
 		for(Block block : ModBlocks.BLOCKS) {
-
+			ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(), "normal"));
 		}
 	}
 

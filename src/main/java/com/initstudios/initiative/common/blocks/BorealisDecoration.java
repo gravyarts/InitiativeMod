@@ -11,17 +11,14 @@
 
 package com.initstudios.initiative.common.blocks;
 
-import com.initstudios.initiative.Main;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
 public class BorealisDecoration extends BlockBase {
 
-    public BorealisDecoration(String name, Material material) {
-        super(name, material);
-        // TODO Auto-generated constructor stub
+    public BorealisDecoration(Material material) {
+        super(material);
         setSoundType(SoundType.STONE);
-        setCreativeTab(Main.borealis);
         setHardness(2F);
         setResistance(10F);
         this.setHarvestLevel("pickaxe", 1);

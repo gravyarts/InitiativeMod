@@ -11,9 +11,7 @@
 
 package com.initstudios.initiative.common.blocks;
 
-import com.initstudios.initiative.Main;
-import com.initstudios.initiative.common.items.ModItems;
-import com.initstudios.initiative.util.IHasModel;
+import com.initstudios.initiative.util.IHaveItem;
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -30,18 +28,11 @@ import net.minecraft.item.ItemBlock;
  *
  * @author iBuyMountainDew (Dewy)
  */
-public class BlockWeightedCubeBase extends BlockFalling implements IHasModel
+public class BlockWeightedCubeBase extends BlockFalling implements IHaveItem
 {
     public BlockWeightedCubeBase(String name, Material material) {
 
         super(material);
-
-        setTranslationKey(name);
-        setRegistryName(name);
-        setCreativeTab(Main.items);
-
-        ModBlocks.BLOCKS.add(this);
-        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 
         setSoundType(SoundType.METAL);
         setHardness(6.0F);
@@ -50,7 +41,7 @@ public class BlockWeightedCubeBase extends BlockFalling implements IHasModel
     }
 
     @Override
-    public void registerModels() {
-        Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+    public Item getItem() {
+        return new ItemBlock(this).setRegistryName(getRegistryName());
     }
 }

@@ -18,9 +18,9 @@ import net.minecraft.util.BlockRenderLayer;
 
 public class SpeedGelDropper extends BlockBase
 {
-    public SpeedGelDropper(String name, Material material)
+    public SpeedGelDropper(Material material)
     {
-        super(name, material);
+        super(material);
     }
 
     @Override

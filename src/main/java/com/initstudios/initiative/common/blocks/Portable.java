@@ -16,9 +16,8 @@ import net.minecraft.block.material.Material;
 
 public class Portable extends LaboratoryBlocks {
 
-	public Portable(String name, Material material) {
-		super(name, material);
-		// TODO Auto-generated constructor stub
+	public Portable(Material material) {
+		super(material);
 		setSoundType(SoundType.STONE);
 		setHardness(0F);
 		setResistance(0F);

@@ -1,6 +1,6 @@
 {
 	"parent": "block/thin_block",
 	"textures": {
-		"all": "blocks/gel_speed"
+		"all": "im:blocks/gel_speed"
 	}
 }

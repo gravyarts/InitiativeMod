@@ -11,24 +11,15 @@
 
 package com.initstudios.initiative.common.items;
 
-import com.initstudios.initiative.Main;
-import com.initstudios.initiative.util.IHasModel;
 import net.minecraft.item.ItemSnowball;
 
-public class GelBallBase extends ItemSnowball implements IHasModel
+public class GelBallBase extends ItemSnowball
 {
     public GelBallBase()
     {
-        setCreativeTab(Main.items);
+
 
         this.maxStackSize = 32;
-
-        ModItems.ITEMS.add(this);
     }
 
-    @Override
-    public void registerModels()
-    {
-        Main.proxy.registerItemRenderer(this, 0, "inventory");
-    }
 }

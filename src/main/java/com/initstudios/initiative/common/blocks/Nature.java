@@ -11,33 +11,35 @@
 
 package com.initstudios.initiative.common.blocks;
 
-import com.initstudios.initiative.Main;
+import com.initstudios.initiative.util.IHaveItem;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.math.AxisAlignedBB;
 
-public class Nature extends LaboratoryBlocks {
+public class Nature extends LaboratoryBlocks implements IHaveItem {
 
 	private static final AxisAlignedBB NATURE_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.75D, 1.0D, 1.0D, 0.0D);
 
-	public Nature(String name, Material material) {
-		super(name, material);
-		// TODO Auto-generated constructor stub
+	public Nature(Material material) {
+		super(material);
 		setSoundType(SoundType.PLANT);
 		setHardness(0F);
 		setResistance(0F);
 	}
 	@Override
-	public void registerModels() {
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
-	}
-	@Override
 	public BlockRenderLayer getRenderLayer() {
 		return BlockRenderLayer.CUTOUT;
 	}
+
+	@Override
+	public Item getItem() {
+		return new ItemBlock(this).setRegistryName(getRegistryName());
+	}
+
 	@Override
 	public boolean isFullCube(final IBlockState state)
 	{

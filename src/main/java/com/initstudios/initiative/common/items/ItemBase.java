@@ -11,20 +11,11 @@
 
 package com.initstudios.initiative.common.items;
 
-import com.initstudios.initiative.Main;
-import com.initstudios.initiative.util.IHasModel;
 import net.minecraft.item.Item;
 
-public class ItemBase extends Item implements IHasModel {
+public class ItemBase extends Item{
 
 	public ItemBase() {
-		setCreativeTab(Main.items);
-		
-		ModItems.ITEMS.add(this);
-	}
-	@Override
-	public void registerModels() {
-		Main.proxy.registerItemRenderer(this, 0, "inventory");
 	}
 
 }

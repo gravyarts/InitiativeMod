@@ -11,8 +11,10 @@
 
 package com.initstudios.initiative.common.items;
 
+import com.initstudios.initiative.Main;
 import com.initstudios.initiative.util.Reference;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -57,25 +59,25 @@ public class ModItems {
 
     public static void init() {
         ARMOR_MATERIAL_STEEL_INGOT = EnumHelper.addArmorMaterial("armor_material_steel_ingot", Reference.MOD_ID + ":ow_steel_ingot", 20, new int[]{5, 10, 12, 5}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0f);
-        MD_ROCK_REFINED = registerItem(new ItemBase(), "md_rock_refined");
-        OW_BH_UNSTABLE = registerItem(new ItemBase(), "ow_bh_unstable");
-        OW_BH_DUST = registerItem(new ItemBase(), "ow_bh_dust");
-        OW_BH_STABLE = registerItem(new ItemBase(), "ow_bh_stable");
-        OW_BH_CRYSTAL = registerItem(new ItemBase(), "ow_bh_crystal");
-        OW_STEEL_INGOT = registerItem(new ItemBase(), "ow_steel_ingot");
-        OW_RFSTEEL_INGOT = registerItem(new ItemBase(), "ow_rfsteel_ingot");
-        OW_STEEL_FRAME = registerItem(new ItemBase(), "ow_steel_frame");
-        OW_RFSTEEL_FRAME = registerItem(new ItemBase(),"ow_rfsteel_frame");
-        OW_CHIP = registerItem(new ItemBase(), "ow_chip");
-        OW_MOTHERBOARD = registerItem(new ItemBase(), "ow_motherboard");
-        OW_DISC = registerItem(new ItemBase(), "ow_disc");
-        OW_CASSETTE = registerItem(new ItemBase(), "ow_cassette");
-        OW_LENS = registerItem(new ItemBase(), "ow_lens");
-        LB_PG_NORMAL = registerItem(new ItemPortalGun(), "lb_pg_normal");
+        MD_ROCK_REFINED = registerItem(new ItemBase(), "md_rock_refined", Main.items);
+        OW_BH_UNSTABLE = registerItem(new ItemBase(), "ow_bh_unstable", Main.items);
+        OW_BH_DUST = registerItem(new ItemBase(), "ow_bh_dust", Main.items);
+        OW_BH_STABLE = registerItem(new ItemBase(), "ow_bh_stable", Main.items);
+        OW_BH_CRYSTAL = registerItem(new ItemBase(), "ow_bh_crystal", Main.items);
+        OW_STEEL_INGOT = registerItem(new ItemBase(), "ow_steel_ingot", Main.items);
+        OW_RFSTEEL_INGOT = registerItem(new ItemBase(), "ow_rfsteel_ingot", Main.items);
+        OW_STEEL_FRAME = registerItem(new ItemBase(), "ow_steel_frame", Main.items);
+        OW_RFSTEEL_FRAME = registerItem(new ItemBase(),"ow_rfsteel_frame", Main.items);
+        OW_CHIP = registerItem(new ItemBase(), "ow_chip", Main.items);
+        OW_MOTHERBOARD = registerItem(new ItemBase(), "ow_motherboard", Main.items);
+        OW_DISC = registerItem(new ItemBase(), "ow_disc", Main.items);
+        OW_CASSETTE = registerItem(new ItemBase(), "ow_cassette", Main.items);
+        OW_LENS = registerItem(new ItemBase(), "ow_lens", Main.items);
+        LB_PG_NORMAL = registerItem(new ItemPortalGun(), "lb_pg_normal", Main.items);
         LB_LONG_FALL_BOOTS = registerItem( new ArmorBase(ARMOR_MATERIAL_STEEL_INGOT, 1, EntityEquipmentSlot.FEET), "lb_long_fall_boots");
-        LB_GEL_SPEED_BALL = registerItem(new ItemSpeedGelBall(), "lb_gel_speed_ball");
-        HANDHELD_PG_00 = registerItem(new ItemBase(), "handheld_pg_00");
-        HANDHELD_LEMON = registerItem(new ItemBase(),"handheld_lemon");
+        LB_GEL_SPEED_BALL = registerItem(new ItemSpeedGelBall(), "lb_gel_speed_ball", Main.items);
+        HANDHELD_PG_00 = registerItem(new ItemBase(), "handheld_pg_00", Main.items);
+        HANDHELD_LEMON = registerItem(new ItemBase(),"handheld_lemon", Main.items);
 
     }
 
@@ -84,6 +86,12 @@ public class ModItems {
         item.setRegistryName(name);
         ITEMS.add(item);
         return item;
+    }
+
+
+    public static <T extends Item> T registerItem(T item, String name, CreativeTabs tab) {
+        item.setCreativeTab(tab);
+        return registerItem(item, name);
     }
 
     public static void registerRenders() {

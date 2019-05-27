@@ -11,9 +11,7 @@
 
 package com.initstudios.initiative.common.blocks;
 
-import com.initstudios.initiative.Main;
-import com.initstudios.initiative.common.items.ModItems;
-import com.initstudios.initiative.util.IHasModel;
+import com.initstudios.initiative.util.IHaveItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyDirection;
@@ -27,20 +25,16 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class LaboratoryBlocks extends Block implements IHasModel {
-	public LaboratoryBlocks(String name, Material material) {
-		super(material);
-		setTranslationKey(name);
-		setRegistryName(name);
-		setCreativeTab(Main.panels);
+public class LaboratoryBlocks extends Block implements IHaveItem {
+    public LaboratoryBlocks(Material material) {
+        super(material);
         setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.SOUTH));
-		ModBlocks.BLOCKS.add(this);
-		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
-	}
-	@Override
-	public void registerModels() {
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
-	}
+    }
+
+    @Override
+    public Item getItem() {
+        return new ItemBlock(this).setRegistryName(getRegistryName());
+    }
 
     @Override
     public BlockRenderLayer getRenderLayer() {
@@ -48,40 +42,34 @@ public class LaboratoryBlocks extends Block implements IHasModel {
     }
 
     @Override
-    public boolean isFullCube(final IBlockState state)
-    {
+    public boolean isFullCube(final IBlockState state) {
         return true;
     }
 
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
     @Override
-    public IBlockState getStateFromMeta(int meta)
-    {
+    public IBlockState getStateFromMeta(int meta) {
         EnumFacing facing = EnumFacing.byIndex(meta);
 
-        if(facing.getAxis()==EnumFacing.Axis.Y)
-        {
-            facing=EnumFacing.SOUTH;
+        if (facing.getAxis() == EnumFacing.Axis.Y) {
+            facing = EnumFacing.SOUTH;
         }
         return getDefaultState().withProperty(FACING, facing);
     }
 
     @Override
-    public int getMetaFromState(IBlockState state)
-    {
+    public int getMetaFromState(IBlockState state) {
         return state.getValue(FACING).getIndex();
     }
 
     @Override
-    protected BlockStateContainer createBlockState()
-    {
+    protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, FACING);
     }
 
     @Override
-    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
-    {
+    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
         return getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
     }
 }
