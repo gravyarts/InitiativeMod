@@ -49,11 +49,11 @@ public class ModItems {
     public static Item OW_LENS;
     //Laboratory
     public static Item LB_PG_NORMAL;
-    public static Item LB_LONG_FALL_BOOTS = new ArmorBase("lb_long_fall_boots", ARMOR_MATERIAL_STEEL_INGOT, 1, EntityEquipmentSlot.FEET);
-    public static Item LB_GEL_SPEED_BALL = new ItemSpeedGelBall("lb_gel_speed_ball");
+    public static Item LB_LONG_FALL_BOOTS;
+    public static Item LB_GEL_SPEED_BALL;
     //Handheld
-    public static Item HANDHELD_PG_00 = new ItemBase("handheld_pg_00");
-    public static Item HANDHELD_LEMON = new ItemBase("handheld_lemon");
+    public static Item HANDHELD_PG_00;
+    public static Item HANDHELD_LEMON;
 
     public static void init() {
         ARMOR_MATERIAL_STEEL_INGOT = EnumHelper.addArmorMaterial("armor_material_steel_ingot", Reference.MOD_ID + ":ow_steel_ingot", 20, new int[]{5, 10, 12, 5}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0f);
@@ -72,7 +72,10 @@ public class ModItems {
         OW_CASSETTE = registerItem(new ItemBase(), "ow_cassette");
         OW_LENS = registerItem(new ItemBase(), "ow_lens");
         LB_PG_NORMAL = registerItem(new ItemPortalGun(), "lb_pg_normal");
- // TODO Work on it....
+        LB_LONG_FALL_BOOTS = registerItem( new ArmorBase(ARMOR_MATERIAL_STEEL_INGOT, 1, EntityEquipmentSlot.FEET), "lb_long_fall_boots");
+        LB_GEL_SPEED_BALL = registerItem(new ItemSpeedGelBall(), "lb_gel_speed_ball");
+        HANDHELD_PG_00 = registerItem(new ItemBase(), "handheld_pg_00");
+        HANDHELD_LEMON = registerItem(new ItemBase(),"handheld_lemon");
 
     }
 

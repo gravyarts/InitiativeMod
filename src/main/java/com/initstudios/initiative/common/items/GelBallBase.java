@@ -17,12 +17,8 @@ import net.minecraft.item.ItemSnowball;
 
 public class GelBallBase extends ItemSnowball implements IHasModel
 {
-    public GelBallBase(String name)
+    public GelBallBase()
     {
-        super();
-
-        setTranslationKey(name);
-        setRegistryName(name);
         setCreativeTab(Main.items);
 
         this.maxStackSize = 32;

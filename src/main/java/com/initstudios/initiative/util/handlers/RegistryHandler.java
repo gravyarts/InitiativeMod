@@ -14,10 +14,8 @@ package com.initstudios.initiative.util.handlers;
 import com.initstudios.initiative.common.blocks.ModBlocks;
 import com.initstudios.initiative.common.entity.projectile.EntitySpeedGelBall;
 import com.initstudios.initiative.common.items.ModItems;
-import com.initstudios.initiative.util.IHasModel;
 import com.initstudios.initiative.util.Reference;
 import net.minecraft.block.Block;
-import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -37,15 +35,9 @@ public class RegistryHandler {
 
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event) {
-		for(Item item : ModItems.ITEMS) {
-			if(item instanceof IHasModel) {
-				((IHasModel)item).registerModels();
-			}
-		}
+		ModItems.registerRenders();
 		for(Block block : ModBlocks.BLOCKS) {
-			if(block instanceof IHasModel) {
-				((IHasModel)block).registerModels();
-			}
+
 		}
 	}
 

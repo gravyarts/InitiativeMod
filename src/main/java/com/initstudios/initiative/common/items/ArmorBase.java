@@ -18,10 +18,8 @@ import net.minecraft.item.ItemArmor;
 
 public class ArmorBase extends ItemArmor implements IHasModel {
 
-	public ArmorBase(String name, ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) {
+	public ArmorBase(ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) {
 		super(materialIn, renderIndexIn, equipmentSlotIn);
-		setTranslationKey(name);
-		setRegistryName(name);
 		setCreativeTab(Main.items);
 		
 		ModItems.ITEMS.add(this);
