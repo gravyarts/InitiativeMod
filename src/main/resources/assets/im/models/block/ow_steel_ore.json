@@ -1,6 +1,0 @@
-{
-   "parent": "block/cube_all",
-   "textures": {
-       "all": "im:blocks/ow_steel_ore"
-   }
-}

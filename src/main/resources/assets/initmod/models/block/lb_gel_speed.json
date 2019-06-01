@@ -1,0 +1,6 @@
+{
+	"parent": "block/thin_block",
+	"textures": {
+		"all": "initmod:gel/lb_gel_speed"
+	}
+}

@@ -1,0 +1,29 @@
+{
+    "variants":
+    {
+        "facing=up":
+        {
+            "model": "initmod:nature_vine"
+        },
+
+        "facing=south":
+        {
+            "model": "initmod:nature_vine"
+        },
+
+        "facing=east":
+        {
+            "model": "initmod:nature_vine","y":270
+        },
+
+        "facing=west":
+        {
+            "model": "initmod:nature_vine","y":90
+        },
+
+        "facing=north":
+        {
+            "model": "initmod:nature_vine","y":180
+        }
+    }
+}

@@ -17,13 +17,13 @@ import org.lwjgl.input.Mouse;
 @Mod.EventBusSubscriber(Side.CLIENT)
 public class PingtoolKeybindHandler
 {
-    private static final String PING_CATEGORY = "im:ping.key.categories.ping";
+    private static final String PING_CATEGORY = "initmod:ping.key.categories.ping";
 
-    public static final KeyBinding KEY_BINDING = new KeyBinding("im.ping.key.ping", Keyboard.KEY_V, PING_CATEGORY);
-    public static final KeyBinding PING_ALERT = new KeyBinding("im.ping.key.alert", Keyboard.KEY_NUMPAD4, PING_CATEGORY);
-    public static final KeyBinding PING_MINE = new KeyBinding("im.ping.key.mine", Keyboard.KEY_NUMPAD5, PING_CATEGORY);
-    public static final KeyBinding PING_LOOK = new KeyBinding("im.ping.key.look", Keyboard.KEY_NUMPAD6, PING_CATEGORY);
-    public static final KeyBinding PING_GOTO = new KeyBinding("im.ping.key.goto", Keyboard.KEY_NUMPAD8, PING_CATEGORY);
+    public static final KeyBinding KEY_BINDING = new KeyBinding("initmod.ping.key.ping", Keyboard.KEY_V, PING_CATEGORY);
+    public static final KeyBinding PING_ALERT = new KeyBinding("initmod.ping.key.alert", Keyboard.KEY_NUMPAD4, PING_CATEGORY);
+    public static final KeyBinding PING_MINE = new KeyBinding("initmod.ping.key.mine", Keyboard.KEY_NUMPAD5, PING_CATEGORY);
+    public static final KeyBinding PING_LOOK = new KeyBinding("initmod.ping.key.look", Keyboard.KEY_NUMPAD6, PING_CATEGORY);
+    public static final KeyBinding PING_GOTO = new KeyBinding("initmod.ping.key.goto", Keyboard.KEY_NUMPAD8, PING_CATEGORY);
 
     private static boolean lastKeyState = false;
     public static boolean ignoreNextRelease = false;

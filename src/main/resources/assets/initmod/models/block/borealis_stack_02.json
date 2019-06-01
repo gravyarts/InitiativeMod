@@ -1,0 +1,6 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+       "all": "initmod:borealis/borealis_stack_02"
+   }
+}
