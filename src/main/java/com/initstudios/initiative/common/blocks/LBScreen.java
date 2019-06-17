@@ -14,7 +14,7 @@ package com.initstudios.initiative.common.blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
-public class LBScreen extends LaboratoryBlocks {
+public class LBScreen extends LabBlocks {
 
 	public LBScreen(Material material) {
 		super(material);

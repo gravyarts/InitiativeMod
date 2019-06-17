@@ -1,8 +1,8 @@
 {
 	"credit": "Asc4Yin",
 	"textures": {
-		"0": "initmod:panel/depth/panel_surface_02",
-		"particle": "initmod:panel/depth/panel_surface_02"
+		"0": "initmod:panel/depth/panel_surface_13",
+		"particle": "initmod:panel/depth/panel_surface_13"
 	},
 	"elements": [
 		{
@@ -20,15 +20,15 @@
 		},
 		{
 			"name": "panel",
-			"from": [0.5, 0, 16],
-			"to": [15.5, 15.5, 16.25],
+			"from": [0.5, 0.5, 16],
+			"to": [15.5, 16, 16.25],
 			"faces": {
-				"north": {"uv": [8.5, 0, 16, 7.75], "texture": "#0"},
-				"east": {"uv": [15.5, 0, 16, 7.75], "texture": "#0"},
-				"south": {"uv": [8.5, 0, 16, 7.75], "texture": "#0"},
-				"west": {"uv": [8.5, 0, 9, 7.75], "texture": "#0"},
-				"up": {"uv": [8.5, 0, 16, 0.5], "texture": "#0"},
-				"down": {"uv": [8.5, 0, 16, 0.5], "texture": "#0"}
+				"north": {"uv": [8.5, 0.25, 16, 8], "texture": "#0"},
+				"east": {"uv": [15.5, 0.25, 16, 8], "texture": "#0"},
+				"south": {"uv": [8.5, 0.25, 16, 8], "texture": "#0"},
+				"west": {"uv": [8.5, 0.25, 9, 8], "texture": "#0"},
+				"up": {"uv": [8.5, 7.5, 16, 8], "texture": "#0"},
+				"down": {"uv": [8.5, 7.5, 16, 8], "texture": "#0"}
 			}
 		}
 	],
@@ -65,7 +65,7 @@
 	},
 	"groups": [
 		{
-			"name": "02",
+			"name": "01",
 			"children": [0, 1]
 		}
 	]

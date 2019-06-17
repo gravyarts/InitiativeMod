@@ -1,8 +1,8 @@
 {
 	"credit": "Asc4Yin",
 	"textures": {
-		"0": "initmod:panel/depth/panel_surface_02",
-		"particle": "initmod:panel/depth/panel_surface_02"
+		"0": "initmod:panel/depth/panel_surface_14",
+		"particle": "initmod:panel/depth/panel_surface_14"
 	},
 	"elements": [
 		{

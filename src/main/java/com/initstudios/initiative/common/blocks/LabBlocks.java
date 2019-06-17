@@ -25,10 +25,9 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class LaboratoryBlocks extends Block implements IHaveItem {
-    public LaboratoryBlocks(Material material) {
+public class LabBlocks extends Block implements IHaveItem {
+    public LabBlocks(Material material) {
         super(material);
-        setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.SOUTH));
     }
 
     @Override
@@ -44,32 +43,5 @@ public class LaboratoryBlocks extends Block implements IHaveItem {
     @Override
     public boolean isFullCube(final IBlockState state) {
         return true;
-    }
-
-    public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-
-    @Override
-    public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.byIndex(meta);
-
-        if (facing.getAxis() == EnumFacing.Axis.Y) {
-            facing = EnumFacing.SOUTH;
-        }
-        return getDefaultState().withProperty(FACING, facing);
-    }
-
-    @Override
-    public int getMetaFromState(IBlockState state) {
-        return state.getValue(FACING).getIndex();
-    }
-
-    @Override
-    protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, FACING);
-    }
-
-    @Override
-    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
-        return getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
     }
 }

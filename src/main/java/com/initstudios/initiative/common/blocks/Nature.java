@@ -20,7 +20,7 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.math.AxisAlignedBB;
 
-public class Nature extends LaboratoryBlocks implements IHaveItem {
+public class Nature extends LabBlocks implements IHaveItem {
 
 	private static final AxisAlignedBB NATURE_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.75D, 1.0D, 1.0D, 0.0D);
 

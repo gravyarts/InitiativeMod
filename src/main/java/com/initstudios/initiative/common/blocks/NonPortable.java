@@ -14,7 +14,7 @@ package com.initstudios.initiative.common.blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
-public class NonPortable extends LaboratoryBlocks {
+public class NonPortable extends PanelBlocks {
 
 	public NonPortable(Material material) {
 		super(material);
