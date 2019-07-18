@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "initmod:light_full_block" }
+    }
+}

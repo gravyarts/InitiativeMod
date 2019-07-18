@@ -73,14 +73,14 @@ public class Main
             return new ItemStack(ModItems.OW_BH_UNSTABLE);
         }
     };
-    public static CreativeTabs panels = new CreativeTabs("panels")
+    public static CreativeTabs laboratory = new CreativeTabs("laboratory")
 	{
         @Override
         public ItemStack createIcon() {
             return new ItemStack(ModBlocks.PANEL_SURFACE_01);
         }
     };
-    public static CreativeTabs borealis = new CreativeTabs("borealis")
+    public static CreativeTabs classic = new CreativeTabs("classic")
     {
         @Override
         public ItemStack createIcon() {

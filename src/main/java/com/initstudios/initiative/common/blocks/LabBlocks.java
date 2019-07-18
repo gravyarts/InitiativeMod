@@ -39,9 +39,9 @@ public class LabBlocks extends Block implements IHaveItem {
     public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT;
     }
-
     @Override
-    public boolean isFullCube(final IBlockState state) {
-        return true;
+    public boolean isFullCube(final IBlockState state)
+    {
+        return false;
     }
 }

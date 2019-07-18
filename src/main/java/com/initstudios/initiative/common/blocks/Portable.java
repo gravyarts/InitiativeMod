@@ -18,8 +18,5 @@ public class Portable extends PanelBlocks {
 
 	public Portable(Material material) {
 		super(material);
-		setSoundType(SoundType.STONE);
-		setHardness(0F);
-		setResistance(0F);
 	}
 }

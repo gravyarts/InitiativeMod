@@ -18,8 +18,5 @@ public class NonPortable extends PanelBlocks {
 
 	public NonPortable(Material material) {
 		super(material);
-		setSoundType(SoundType.STONE);
-		setHardness(0F);
-		setResistance(0F);
 	}
 }

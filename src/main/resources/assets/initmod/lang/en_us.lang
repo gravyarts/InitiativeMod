@@ -1,9 +1,13 @@
 itemGroup.items=Items
-itemGroup.panels=Panels
-itemGroup.borealis=Borealis
+itemGroup.laboratory=Laboratory
+itemGroup.classic=Classic
 
+tile.cube_classic=Classic Cube
+tile.cube_expand=Expansive Cube
 tile.cube_heart_off.name=Heart Cube
+tile.cube_skull.name=Skull Cube
 tile.cube_storage_off.name=Storage Cube
+tile.cube_newstorage_off.name=New Storage Cube
 tile.cube_reflect.name=Reflection Cube
 
 tile.lb_gel_speed_dropper.name=Propulsion Gel Dropper
@@ -20,6 +24,23 @@ tile.panel_surface_11.name=Panel Surface
 tile.panel_surface_12.name=Panel Surface
 tile.panel_surface_21.name=Panel Surface
 tile.panel_surface_22.name=Panel Surface
+tile.panel_surface_31.name=Panel Surface
+tile.panel_surface_41.name=Checkered Floor
+tile.panel_surface_42.name=Checkered Floor
+tile.panel_surface_43.name=Grid Floor
+tile.panel_surface_44.name=Grid Floor
+tile.panel_surface_45.name=Smooth Floor
+tile.panel_surface_46.name=Smooth Floor
+tile.light_full_block.name=Full Light Block
+
+tile.borealis_hull_01.name=Strange Ship Hull
+tile.borealis_hull_02.name=Strange Ship Hull
+tile.borealis_hull_03.name=Strange Ship Hull
+tile.borealis_deck_01.name=Strange Ship Deck
+tile.borealis_structure_01.name=Strange Ship Structure
+tile.borealis_structure_02.name=Strange Ship Structure
+tile.borealis_stack_01.name=Strange Ship Smoke Stack
+tile.borealis_stack_02.name=Strange Ship Smoke Stack
 
 key.categories.ping=Ping
 

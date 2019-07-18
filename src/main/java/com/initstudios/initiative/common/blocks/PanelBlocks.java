@@ -13,6 +13,7 @@ package com.initstudios.initiative.common.blocks;
 
 import com.initstudios.initiative.util.IHaveItem;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
@@ -28,6 +29,10 @@ import net.minecraft.world.World;
 public class PanelBlocks extends Block implements IHaveItem {
     public PanelBlocks(Material material) {
         super(material);
+        this.setSoundType(SoundType.STONE);
+        this.setHardness(2F);
+        this.setResistance(10F);
+        this.setHarvestLevel("pickaxe", 0);
         setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.SOUTH));
     }
 

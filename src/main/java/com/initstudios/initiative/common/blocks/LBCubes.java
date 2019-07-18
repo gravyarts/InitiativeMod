@@ -14,9 +14,9 @@ public class LBCubes extends BlockFalling implements IHaveItem {
 	}
 
     @Override
-    public Item getItem() {
-        return new ItemBlock(this).setRegistryName(getRegistryName());
-    }
+public Item getItem() {
+    return new ItemBlock(this).setRegistryName(getRegistryName());
+}
 
     @Override
     public BlockRenderLayer getRenderLayer() {
