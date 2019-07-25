@@ -1,0 +1,53 @@
+itemGroup.items=Items
+itemGroup.laboratory=Laboratório
+itemGroup.classic=Clássico
+
+tile.cube_classic=Cubo Clássico
+tile.cube_expand=Cubo Expansivo
+tile.cube_heart_off.name=Cubo Coração
+tile.cube_skull.name=Cubo Caveira
+tile.cube_storage_off.name=Cubo de Armazenamento
+tile.cube_newstorage_off.name=Cubo de Armazenamento Novo.
+tile.cube_reflect.name=Reflection Cube
+
+tile.lb_gel_speed_dropper.name=Ejetor de Gel de Propulsão
+tile.lb_gel_jump_dropper.name=Ejetor de Gel de Repulsão
+tile.lb_gel_white_dropper.name=Ejetor de Gel de Conversão
+tile.lb_cube_dropper.name=Ejetor de Cubo
+
+entity.lb_gel_speed_ball.name=Bola de Gel de Propulsão
+tile.gel_speed.name=Gel de Propulsão
+
+tile.panel_surface_01.name=Superfície de Painel
+tile.panel_surface_02.name=Superfície de Painel
+tile.panel_surface_11.name=Superfície de Painel
+tile.panel_surface_12.name=Superfície de Painel
+tile.panel_surface_21.name=Superfície de Painel
+tile.panel_surface_22.name=Superfície de Painel
+tile.panel_surface_31.name=Superfície de Painel
+tile.panel_surface_41.name=Piso Xadrez
+tile.panel_surface_42.name=Piso Xadrez
+tile.panel_surface_43.name=Piso de Grade
+tile.panel_surface_44.name=Piso de Grade
+tile.panel_surface_45.name=Piso Liso
+tile.panel_surface_46.name=Piso Liso
+tile.light_full_block.name=Bloco de Luz Cheio
+
+tile.borealis_hull_01.name=Casco do Navio Estranho
+tile.borealis_hull_02.name=Casco do Navio Estranho
+tile.borealis_hull_03.name=Casco do Navio Estranho
+tile.borealis_deck_01.name=Deck do Navio Estranho
+tile.borealis_structure_01.name=Estrutura do Navio Estranho
+tile.borealis_structure_02.name=Estrutura do Navio Estranho
+tile.borealis_stack_01.name=Chaminé do Navio Estranho
+tile.borealis_stack_02.name=Chaminé do Navio Estranho
+
+key.categories.ping=Ping
+
+key.ping=Abrir o menu de ping
+im.ping.key.alert=Ping (Alert)
+im.ping.key.mine=Ping (Minerar)
+im.ping.key.look=Ping (Olhar)
+im.ping.key.goto=Ping (Ir)
+
+pingtool.subtitle.bloop=Beep do Ping
