@@ -77,7 +77,7 @@ public class Main
 	{
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(ModBlocks.PANEL_SURFACE_01);
+            return new ItemStack(ModBlocks.CUBE_INITMOD);
         }
     };
     public static CreativeTabs classic = new CreativeTabs("classic")

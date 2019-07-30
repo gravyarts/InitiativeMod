@@ -37,11 +37,12 @@ public class ModBlocks {
     public static final Block CUBE_SKULL = registerBlock(new LBCubes(Material.ANVIL), "cube_skull", Main.laboratory);
     public static final Block CUBE_EXPAND = registerBlock(new LBCubes(Material.ANVIL), "cube_expand", Main.laboratory);
     public static final Block CUBE_CLASSIC = registerBlock(new LBCubes(Material.ANVIL), "cube_classic", Main.laboratory);
+    public static final Block CUBE_INITMOD = registerBlock(new LBCubes(Material.ANVIL), "cube_initmod", Main.laboratory);
     //Dropper
-    public static final Block LB_GEL_JUMP_DROPPER = registerBlock(new LBDropper(Material.IRON), "lb_gel_jump_dropper", Main.items);
-    public static final Block LB_GEL_SPEED_DROPPER = registerBlock(new LBDropper(Material.IRON), "lb_gel_speed_dropper", Main.items);
-    public static final Block LB_GEL_WHITE_DROPPER = registerBlock(new LBDropper(Material.IRON), "lb_gel_white_dropper", Main.items);
-    public static final Block LB_CUBE_DROPPER = registerBlock(new LBDropper(Material.IRON), "lb_cube_dropper", Main.items);
+    public static final Block LB_GEL_JUMP_DROPPER = registerBlock(new LBDropper(Material.IRON), "lb_gel_jump_dropper", Main.laboratory);
+    public static final Block LB_GEL_SPEED_DROPPER = registerBlock(new LBDropper(Material.IRON), "lb_gel_speed_dropper", Main.laboratory);
+    public static final Block LB_GEL_WHITE_DROPPER = registerBlock(new LBDropper(Material.IRON), "lb_gel_white_dropper", Main.laboratory);
+    public static final Block LB_CUBE_DROPPER = registerBlock(new LBDropper(Material.IRON), "lb_cube_dropper", Main.laboratory);
     //Gel
     //GEL_SPEED needs fixing <3
     public static final Block GEL_SPEED = registerBlock(new LBGelSpeed(MaterialGel.GEL), "gel_speed", Main.items);
@@ -71,7 +72,7 @@ public class ModBlocks {
     public static final Block BOREALIS_DECK_01 = registerBlock(new BorealisDecoration(Material.IRON), "borealis_deck_01", Main.classic);
     public static final Block BOREALIS_STRUCTURE_01 = registerBlock(new BorealisDecoration(Material.IRON), "borealis_structure_01", Main.classic);
     public static final Block BOREALIS_STACK_01 = registerBlock(new BorealisDecoration(Material.IRON), "borealis_stack_01", Main.classic);
-    public static final Block BOREALIS_STACK_02 = registerBlock(new BorealisDecoration(Material.IRON), "borealis stack_02", Main.classic);
+    public static final Block BOREALIS_STACK_02 = registerBlock(new BorealisDecoration(Material.IRON), "borealis_stack_02", Main.classic);
 
     private static Block registerBlock(Block block, String name) {
         block.setTranslationKey(name);

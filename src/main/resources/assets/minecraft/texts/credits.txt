@@ -267,31 +267,24 @@
 
 §7Project Leader
 §f          Asc4Yin
+§f          iBuyMountainDew (Dewy)
 
 §7Code
-§f          best2327
 §f          iBuyMountainDew (Dewy)
 §f          Enderman842
-§f          lush
-§f          Sir_Oblivious
-§f          Hallzmine
 
 §7Models
 §f          Asc4Yin
 §f          Enderman842
-§f          fortbrick2
 §f          lush
-§f          Hallzmine
-
-§7Textures
-§f          Asc4Yin
-§f          Enderman842
-§f          lush
-§f          Hallzmine
 
 §7Audio
 §f          Luke996
 §f          lush
+
+§7Special Thanks
+§f          Josia50
+§f          best2327
 
 §7Minecraft © Mojang AB. All rights reserved.
 
