@@ -18,20 +18,4 @@ public class LabBlocks extends Block implements IHaveItem {
     public Item getItem() {
         return new ItemBlock(this).setRegistryName(getRegistryName());
     }
-
-    @Override
-    public BlockRenderLayer getRenderLayer() {
-        return BlockRenderLayer.CUTOUT;
-    }
-    @Override
-    public boolean isFullCube(final IBlockState state)
-    {
-        return false;
-    }
-
-    @Override
-    public boolean isOpaqueCube(final IBlockState state)
-    {
-        return false;
-    }
 }

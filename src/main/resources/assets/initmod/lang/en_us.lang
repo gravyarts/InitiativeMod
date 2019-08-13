@@ -19,6 +19,7 @@ tile.lb_cube_dropper.name=Cube Dropper
 item.lb_gel_speed_ball.name=Propulsion Gel Ball
 entity.lb_gel_speed_ball.name=Propulsion Gel Ball
 tile.gel_speed.name=Propulsion Gel
+tile.gel_jump.name=Repulsion Gel
 
 tile.panel_surface_01.name=Panel Surface
 tile.panel_surface_02.name=Panel Surface
@@ -37,6 +38,7 @@ tile.panel_surface_44.name=Grid Floor
 tile.panel_surface_45.name=Smooth Floor
 tile.panel_surface_46.name=Smooth Floor
 tile.light_full_block.name=Full Light Block
+tile.panel_screen_08.name=Screen
 
 tile.borealis_hull_01.name=Strange Ship Hull
 tile.borealis_hull_02.name=Strange Ship Hull

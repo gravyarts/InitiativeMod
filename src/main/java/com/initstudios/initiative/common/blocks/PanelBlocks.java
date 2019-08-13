@@ -32,7 +32,7 @@ public class PanelBlocks extends Block implements IHaveItem {
         this.setSoundType(SoundType.STONE);
         this.setHardness(2F);
         this.setResistance(10F);
-        this.setHarvestLevel("pickaxe", 0);
+        this.setHarvestLevel("pickaxe", 1);
         setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.SOUTH));
     }
 

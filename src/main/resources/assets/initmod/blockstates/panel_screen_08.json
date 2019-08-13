@@ -1,0 +1,29 @@
+{
+    "variants":
+    {
+        "facing=up":
+        {
+            "model": "initmod:panel_screen_08"
+        },
+
+        "facing=south":
+        {
+            "model": "initmod:panel_screen_08"
+        },
+
+        "facing=east":
+        {
+            "model": "initmod:panel_screen_08","y":270
+        },
+
+        "facing=west":
+        {
+            "model": "initmod:panel_screen_08","y":90
+        },
+
+        "facing=north":
+        {
+            "model": "initmod:panel_screen_08","y":180
+        }
+    }
+}

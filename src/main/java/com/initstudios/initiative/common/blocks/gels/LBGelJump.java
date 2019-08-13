@@ -29,16 +29,16 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class LBGelSpeed extends Block implements IHaveItem {
+public class LBGelJump extends Block implements IHaveItem {
 
     protected static final AxisAlignedBB GEL_SPEED_AABB_2 = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.125D, 1.0D);
     private static final AxisAlignedBB GEL_SPEED_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.125D, 1.0D);
 
-    public LBGelSpeed(Material material)
+    public LBGelJump(Material material)
     {
-        super(material, MapColor.ORANGE_STAINED_HARDENED_CLAY);
+        super(material, MapColor.BLUE_STAINED_HARDENED_CLAY);
         setSoundType(SoundType.SLIME);
-        this.slipperiness = 0.6F;
+        this.slipperiness = 0.0F;
         setResistance(1.0F);
         setHardness(0.5F);
         setHarvestLevel("pickaxe", 0);
@@ -61,8 +61,9 @@ public class LBGelSpeed extends Block implements IHaveItem {
 
     public void onEntityCollision(World worldIn, BlockPos pos, IBlockState state, Entity entityIn)
     {
-        entityIn.motionX *= 1.265D;
-        entityIn.motionZ *= 1.265D;
+        entityIn.motionX *= 1.025D;
+        entityIn.motionY *= 2D;
+        entityIn.motionZ *= 1.025D;
     }
 
     public boolean canPlaceBlockAt(World worldIn, BlockPos pos)

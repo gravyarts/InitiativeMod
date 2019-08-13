@@ -1,5 +1,5 @@
 {
-	"variants": {
-		"normal": { "model": "initmod:gel_speed" }
-	}
+    "variants": {
+        "normal": { "model": "initmod:gel_speed" }
+    }
 }

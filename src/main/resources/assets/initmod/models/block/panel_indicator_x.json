@@ -1,0 +1,81 @@
+{
+	"credit": "Asc4Yin",
+	"textures": {
+		"0": "initmod:panel/screen/panel_indicator_x",
+		"particle": "initmod:panel/screen/panel_indicator_x"
+	},
+	"elements": [
+		{
+			"name": "indicator",
+			"from": [3, 3, 14.25],
+			"to": [13, 13, 15],
+			"faces": {
+				"north": {"uv": [9.5, 1.5, 14.5, 6.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "element",
+			"from": [2, 2, 14],
+			"to": [3, 14, 15],
+			"faces": {
+				"north": {"uv": [0, 1.5, 0.5, 6.5], "texture": "#0"},
+				"east": {"uv": [0, 1.5, 0.5, 6.5], "texture": "#0"},
+				"west": {"uv": [0, 1.5, 0.5, 6.5], "texture": "#0"},
+				"up": {"uv": [6, 0, 6.5, 0.5], "texture": "#0"},
+				"down": {"uv": [1.5, 7.5, 2, 8], "texture": "#0"}
+			}
+		},
+		{
+			"name": "element",
+			"from": [13, 2, 14],
+			"to": [14, 14, 15],
+			"faces": {
+				"north": {"uv": [7.5, 1.5, 8, 6.5], "texture": "#0"},
+				"east": {"uv": [7.5, 1.5, 8, 6.5], "texture": "#0"},
+				"west": {"uv": [0, 1.5, 0.5, 6.5], "texture": "#0"},
+				"up": {"uv": [1.5, 0, 2, 0.5], "texture": "#0"},
+				"down": {"uv": [6, 7.5, 6.5, 8], "texture": "#0"}
+			}
+		},
+		{
+			"name": "element",
+			"from": [3, 2, 14],
+			"to": [13, 3, 15],
+			"faces": {
+				"north": {"uv": [2, 7.5, 6, 8], "texture": "#0"},
+				"up": {"uv": [2, 7.5, 6, 8], "texture": "#0"},
+				"down": {"uv": [2, 7.5, 6, 8], "texture": "#0"}
+			}
+		},
+		{
+			"name": "element",
+			"from": [3, 13, 14],
+			"to": [13, 14, 15],
+			"faces": {
+				"north": {"uv": [2, 0, 6, 0.5], "texture": "#0"},
+				"up": {"uv": [2, 0, 6, 0.5], "texture": "#0"},
+				"down": {"uv": [2, 7.5, 6, 8], "texture": "#0"}
+			}
+		},
+		{
+			"name": "main",
+			"from": [2, 2, 15],
+			"to": [14, 14, 16],
+			"faces": {
+				"north": {"uv": [1.5, 1.5, 6.5, 6.5], "texture": "#0"},
+				"east": {"uv": [7.5, 1.5, 8, 6.5], "texture": "#0"},
+				"south": {"uv": [1.5, 1.5, 6.5, 6.5], "texture": "#0"},
+				"west": {"uv": [0, 1.5, 0.5, 6.5], "texture": "#0"},
+				"up": {"uv": [1.5, 0, 6.5, 0.5], "texture": "#0"},
+				"down": {"uv": [1.5, 7.5, 6.5, 8], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [0,
+		{
+			"name": "container",
+			"origin": [8, 8, 8],
+			"children": [1, 2, 3, 4, 5]
+		}
+	]
+}
