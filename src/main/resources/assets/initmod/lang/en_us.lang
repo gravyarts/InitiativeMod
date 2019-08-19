@@ -39,6 +39,7 @@ tile.panel_surface_45.name=Smooth Floor
 tile.panel_surface_46.name=Smooth Floor
 tile.light_full_block.name=Full Light Block
 tile.panel_screen_08.name=Screen
+tile.panel_indicator_x.name=Panel Indicator X
 
 tile.borealis_hull_01.name=Strange Ship Hull
 tile.borealis_hull_02.name=Strange Ship Hull
@@ -51,7 +52,9 @@ tile.borealis_stack_02.name=Strange Ship Smoke Stack
 
 tile.scaffold_01.name=Steel Beam
 
-key.categories.ping=Ping
+tile.super_button_01.name=Super Button
+
+initmod:ping.key.categories.ping=Ping
 
 key.ping=Opens Ping menu
 im.ping.key.alert=Ping (Alert)
