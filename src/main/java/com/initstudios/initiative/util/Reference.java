@@ -14,7 +14,7 @@ package com.initstudios.initiative.util;
 public class Reference {
 	public static final String MOD_ID = "initmod";
 	public static final String NAME = "Initiative Mod";
-	public static final String VERSION = "0.0.7";
+	public static final String VERSION = "0.9";
 	public static final String ACCEPTED_VERSIONS = "[1.12.2]";
 	public static final String CLIENT_PROXY_CLASS = "com.initstudios.initiative.proxy.ClientProxy";
 	public static final String COMMON_PROXY_CLASS = "com.initstudios.initiative.proxy.CommonProxy";
