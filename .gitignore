@@ -25,6 +25,7 @@ logs
 crash-reports
 config
 saves
+assets
 
 # wildcards, may delete intended things, use carefully
 forge-*
