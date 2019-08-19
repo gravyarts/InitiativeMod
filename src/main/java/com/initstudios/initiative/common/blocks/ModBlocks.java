@@ -55,8 +55,8 @@ public class ModBlocks {
     public static final Block PANEL_SURFACE_12 = registerBlock(new NonPortable(Material.IRON), "panel_surface_12", Main.laboratory);
     public static final Block PANEL_SURFACE_13 = registerBlock(new NonPortable(Material.IRON), "panel_surface_13", Main.laboratory);
     public static final Block PANEL_SURFACE_14 = registerBlock(new NonPortable(Material.IRON), "panel_surface_14", Main.laboratory);
-    public static final Block PANEL_SURFACE_21 = registerBlock(new NonPortable(Material.IRON), "panel_surface_21", Main.laboratory);
-    public static final Block PANEL_SURFACE_22 = registerBlock(new NonPortable(Material.IRON), "panel_surface_22", Main.laboratory);
+    //public static final Block PANEL_SURFACE_21 = registerBlock(new NonPortable(Material.IRON), "panel_surface_21", Main.laboratory);
+    //public static final Block PANEL_SURFACE_22 = registerBlock(new NonPortable(Material.IRON), "panel_surface_22", Main.laboratory);
     public static final Block PANEL_SURFACE_31 = registerBlock(new NonPortable(Material.IRON), "panel_surface_31", Main.laboratory);
     public static final Block PANEL_SURFACE_32 = registerBlock(new NonPortable(Material.IRON), "panel_surface_32", Main.laboratory);
     public static final Block PANEL_SURFACE_41 = registerBlock(new LabBlocks(Material.IRON), "panel_surface_41", Main.laboratory);
