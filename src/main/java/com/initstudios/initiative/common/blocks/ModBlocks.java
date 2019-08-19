@@ -45,7 +45,7 @@ public class ModBlocks {
     public static final Block LB_GEL_WHITE_DROPPER = registerBlock(new LBDropper(Material.IRON), "lb_gel_white_dropper", Main.laboratory);
     public static final Block LB_CUBE_DROPPER = registerBlock(new LBDropper(Material.IRON), "lb_cube_dropper", Main.laboratory);
     //Gel
-    //GEL_SPEED needs fixing <3
+    //TODO GEL_SPEED needs fixing <3
     public static final Block GEL_SPEED = registerBlock(new LBGelSpeed(MaterialGel.GEL), "gel_speed", Main.classic);
     public static final Block GEL_JUMP = registerBlock(new LBGelJump(MaterialGel.GEL), "gel_jump", Main.classic);
     //Lab Blocks
@@ -67,7 +67,7 @@ public class ModBlocks {
     public static final Block PANEL_SURFACE_46 = registerBlock(new LabBlocks(Material.IRON), "panel_surface_46", Main.laboratory);
     public static final Block LIGHT_FULL_BLOCK = registerBlock(new LightBlocks(Material.IRON), "light_full_block", Main.laboratory);
     public static final Block SCAFFOLD_01 = registerBlock(new ScaffoldBlocks(Material.IRON), "scaffold_01", Main.laboratory);
-    public static final Block GRATING_00 = registerBlock(new ScaffoldBlocks(Material.IRON), "grating_00", Main.classic);
+    //public static final Block GRATING_00 = registerBlock(new ScaffoldBlocks(Material.IRON), "grating_00", Main.classic);
     public static final Block PANEL_SCREEN_08 = registerBlock(new LBScreen(Material.IRON), "panel_screen_08", Main.laboratory);
     public static final Block PANEL_INDICATOR_X = registerBlock(new LBScreen(Material.IRON), "panel_indicator_x", Main.laboratory);
     public static final Block SUPER_BUTTON_01 = registerBlock(new LBButton(Material.IRON), "super_button_01", Main.laboratory);
