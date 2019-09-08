@@ -54,13 +54,15 @@ tile.scaffold_01.name=Steel Beam
 
 tile.super_button_01.name=Super Button
 
+tile.initmod.block.neflis.name=Neflis
+
 initmod:ping.key.categories.ping=Ping
 
 key.ping=Opens Ping menu
-im.ping.key.alert=Ping (Alert)
-im.ping.key.mine=Ping (Mine)
-im.ping.key.look=Ping (Look)
-im.ping.key.goto=Ping (Go to)
+initmod.ping.key.alert=Ping (Alert)
+initmod.ping.key.mine=Ping (Mine)
+initmod.ping.key.look=Ping (Look)
+initmod.ping.key.goto=Ping (Go to)
 
 pingtool.subtitle.bloop=Ping bloops
 
