@@ -21,4 +21,6 @@ public class Reference {
 
 	public static final String DEPENDENCIES_FORGE = "required-after:forge@[14.23.5.2796,)";
 	public static final String GUI_FACTORY = "com.initstudios.initiative.client.gui.InitiativeGuiFactory";
+
+	public static final String VERSION_OF_MC = "1.12.2";
 }
