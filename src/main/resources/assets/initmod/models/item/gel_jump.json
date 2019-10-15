@@ -1,6 +1,6 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "initmod:classic/gel/gel_jump_item"
-  }
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "initmod:classic/gel/gel_jump"
+    }
 }

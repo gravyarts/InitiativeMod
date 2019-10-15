@@ -1,22 +1,29 @@
 {
 	"credit": "Asc4Yin",
+	"parent": "block/thin_block",
 	"textures": {
-		"0": "initmod:classic/gel/gel_speed",
-		"particle": "initmod:classic/gel/gel_speed"
+		"wool": "initmod:classic/gel/gel_speed"
 	},
 	"elements": [
 		{
-			"name": "gel_speed",
+			"name": "main",
 			"from": [0, 0, 0],
-			"to": [16, 0.25, 16],
+			"to": [16, 1.5, 16],
 			"faces": {
-				"north": {"uv": [0, 0, 16, 0.25], "texture": "#0"},
-				"east": {"uv": [0, 0, 16, 0.25], "texture": "#0"},
-				"south": {"uv": [0, 0, 16, 0.25], "texture": "#0"},
-				"west": {"uv": [0, 0, 16, 0.25], "texture": "#0"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+				"north": {"uv": [0, 15, 16, 16], "texture": "#wool", "cullface": "north"},
+				"east": {"uv": [0, 15, 16, 16], "texture": "#wool", "cullface": "east"},
+				"south": {"uv": [0, 15, 16, 16], "texture": "#wool", "cullface": "south"},
+				"west": {"uv": [0, 15, 16, 16], "texture": "#wool", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#wool"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#wool", "cullface": "down"}
 			}
+		}
+	],
+	"groups": [
+		{
+			"name": "gel",
+			"origin": [8, 8, 8],
+			"children": [0]
 		}
 	]
 }
