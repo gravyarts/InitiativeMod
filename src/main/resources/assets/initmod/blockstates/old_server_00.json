@@ -1,0 +1,29 @@
+{
+    "variants":
+    {
+        "facing=up":
+        {
+            "model": "initmod:old_server_00"
+        },
+
+        "facing=south":
+        {
+            "model": "initmod:old_server_00","y":180
+        },
+
+        "facing=east":
+        {
+            "model": "initmod:old_server_00","y":90
+        },
+
+        "facing=west":
+        {
+            "model": "initmod:old_server_00","y":270
+        },
+
+        "facing=north":
+        {
+            "model": "initmod:old_server_00","y":0
+        }
+    }
+}

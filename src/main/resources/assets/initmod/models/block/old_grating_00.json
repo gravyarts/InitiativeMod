@@ -1,0 +1,6 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+       "all": "initmod:classic/ambient/old_grating_00"
+   }
+}
