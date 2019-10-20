@@ -13,7 +13,6 @@ package com.initstudios.initiative;
 
 import com.initstudios.initiative.common.blocks.ModBlocks;
 import com.initstudios.initiative.common.items.ModItems;
-import com.initstudios.initiative.dewy.common.core.InitiativeLogger;
 import com.initstudios.initiative.proxy.ClientProxy;
 import com.initstudios.initiative.proxy.CommonProxy;
 import com.initstudios.initiative.util.LoggingUtil;
@@ -35,14 +34,13 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class Main 
 {
     public static FMLCommonHandler commonHandler;
-    public static InitiativeLogger logger = InitiativeLogger.createInitiativeLogger("Initiative Mod");
+    public static LoggingUtil logger = new LoggingUtil();
 
     @Instance
     public static Main instance;
     
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;
-    public static ClientProxy clientproxy;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
