@@ -64,12 +64,6 @@ public class LBGelSpeed extends Block implements IHaveItem {
         entityIn.motionX *= 1.265D;
         entityIn.motionZ *= 1.265D;
     }
-
-    public boolean canPlaceBlockAt(World worldIn, BlockPos pos)
-    {
-        return super.canPlaceBlockAt(worldIn, pos) && this.canBlockStay(worldIn, pos);
-    }
-
     public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos)
     {
         this.checkForDrop(worldIn, pos, state);

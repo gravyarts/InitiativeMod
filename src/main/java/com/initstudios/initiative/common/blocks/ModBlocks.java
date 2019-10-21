@@ -45,18 +45,22 @@ public class ModBlocks {
     public static final Block LB_GEL_WHITE_DROPPER = registerBlock(new LBDropper(Material.IRON), "lb_gel_white_dropper", Main.laboratory);
     public static final Block LB_CUBE_DROPPER = registerBlock(new LBDropper(Material.IRON), "lb_cube_dropper", Main.laboratory);
     //Gel
-    //TODO GEL_SPEED needs fixing <3
+    //GEL_SPEED needs fixing <3
     public static final Block GEL_SPEED = registerBlock(new LBGelSpeed(MaterialGel.GEL), "gel_speed", Main.classic);
     public static final Block GEL_JUMP = registerBlock(new LBGelJump(MaterialGel.GEL), "gel_jump", Main.classic);
     //Lab Blocks
     public static final Block PANEL_SURFACE_01 = registerBlock(new Portable(Material.IRON), "panel_surface_01", Main.laboratory);
     public static final Block PANEL_SURFACE_02 = registerBlock(new Portable(Material.IRON), "panel_surface_02", Main.laboratory);
+    public static final Block PANEL_SURFACE_03 = registerBlock(new Portable(Material.IRON), "panel_surface_03", Main.laboratory);
+    public static final Block PANEL_SURFACE_04 = registerBlock(new Portable(Material.IRON), "panel_surface_04", Main.laboratory);
+    public static final Block PANEL_SURFACE_05 = registerBlock(new Portable(Material.IRON), "panel_surface_05", Main.laboratory);
+    public static final Block PANEL_SURFACE_06 = registerBlock(new Portable(Material.IRON), "panel_surface_06", Main.laboratory);
     public static final Block PANEL_SURFACE_11 = registerBlock(new NonPortable(Material.IRON), "panel_surface_11", Main.laboratory);
     public static final Block PANEL_SURFACE_12 = registerBlock(new NonPortable(Material.IRON), "panel_surface_12", Main.laboratory);
     public static final Block PANEL_SURFACE_13 = registerBlock(new NonPortable(Material.IRON), "panel_surface_13", Main.laboratory);
     public static final Block PANEL_SURFACE_14 = registerBlock(new NonPortable(Material.IRON), "panel_surface_14", Main.laboratory);
-    //public static final Block PANEL_SURFACE_21 = registerBlock(new NonPortable(Material.IRON), "panel_surface_21", Main.laboratory);
-    //public static final Block PANEL_SURFACE_22 = registerBlock(new NonPortable(Material.IRON), "panel_surface_22", Main.laboratory);
+    public static final Block PANEL_SURFACE_21 = registerBlock(new NonPortable(Material.IRON), "panel_surface_21", Main.laboratory);
+    public static final Block PANEL_SURFACE_22 = registerBlock(new NonPortable(Material.IRON), "panel_surface_22", Main.laboratory);
     public static final Block PANEL_SURFACE_31 = registerBlock(new NonPortable(Material.IRON), "panel_surface_31", Main.laboratory);
     public static final Block PANEL_SURFACE_32 = registerBlock(new NonPortable(Material.IRON), "panel_surface_32", Main.laboratory);
     public static final Block PANEL_SURFACE_41 = registerBlock(new LabBlocks(Material.IRON), "panel_surface_41", Main.laboratory);
@@ -65,13 +69,14 @@ public class ModBlocks {
     public static final Block PANEL_SURFACE_44 = registerBlock(new LabBlocks(Material.IRON), "panel_surface_44", Main.laboratory);
     public static final Block PANEL_SURFACE_45 = registerBlock(new LabBlocks(Material.IRON), "panel_surface_45", Main.laboratory);
     public static final Block PANEL_SURFACE_46 = registerBlock(new LabBlocks(Material.IRON), "panel_surface_46", Main.laboratory);
+    public static final Block PANEL_OUTLINE = registerBlock(new ScaffoldBlocks(Material.IRON), "panel_outline", Main.laboratory);
     public static final Block LIGHT_FULL_BLOCK = registerBlock(new LightBlocks(Material.IRON), "light_full_block", Main.laboratory);
     public static final Block SCAFFOLD_01 = registerBlock(new ScaffoldBlocks(Material.IRON), "scaffold_01", Main.laboratory);
-    //public static final Block GRATING_00 = registerBlock(new ScaffoldBlocks(Material.IRON), "grating_00", Main.classic);
-    public static final Block PANEL_SCREEN_08 = registerBlock(new LBScreen(Material.IRON), "panel_screen_08", Main.laboratory);
-    public static final Block PANEL_INDICATOR_X = registerBlock(new LBScreen(Material.IRON), "panel_indicator_x", Main.laboratory);
+    public static final Block GRATING_00 = registerBlock(new ScaffoldBlocks(Material.IRON), "grating_00", Main.laboratory);
+    public static final Block PANEL_SCREEN_08 = registerBlock(new LBIndicatorsLong(Material.IRON), "panel_screen_08", Main.laboratory);
+    public static final Block PANEL_INDICATOR_X = registerBlock(new LBIndicatorsShort(Material.IRON), "panel_indicator_x", Main.laboratory);
     public static final Block SUPER_BUTTON_01 = registerBlock(new LBButton(Material.IRON), "super_button_01", Main.laboratory);
-    //Borealis Blocks
+    //Classic Blocks
     public static final Block BOREALIS_HULL_01 = registerBlock(new BorealisHull(Material.IRON), "borealis_hull_01", Main.classic);
     public static final Block BOREALIS_HULL_02 = registerBlock(new BorealisHull(Material.IRON), "borealis_hull_02", Main.classic);
     public static final Block BOREALIS_HULL_03 = registerBlock(new BorealisHull(Material.IRON), "borealis_hull_03", Main.classic);
@@ -79,7 +84,9 @@ public class ModBlocks {
     public static final Block BOREALIS_STRUCTURE_01 = registerBlock(new BorealisDecoration(Material.IRON), "borealis_structure_01", Main.classic);
     public static final Block BOREALIS_STACK_01 = registerBlock(new BorealisDecoration(Material.IRON), "borealis_stack_01", Main.classic);
     public static final Block BOREALIS_STACK_02 = registerBlock(new BorealisDecoration(Material.IRON), "borealis_stack_02", Main.classic);
-
+    public static final Block OLD_GRATING_00 = registerBlock(new ScaffoldBlocks(Material.IRON), "old_grating_00", Main.classic);
+    public static final Block OLD_GRATING_01 = registerBlock(new ScaffoldBlocks(Material.IRON), "old_grating_01", Main.classic);
+    public static final Block OLD_SERVER_00 = registerBlock(new Servers(Material.IRON), "old_server_00", Main.classic);
     private static Block registerBlock(Block block, String name) {
         block.setTranslationKey(name);
         block.setRegistryName(name);

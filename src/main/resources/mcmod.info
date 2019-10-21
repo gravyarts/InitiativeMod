@@ -5,9 +5,12 @@
   "description": "Portal 2 Mod",
   "version": "0.9",
   "mcversion": "1.12.2",
-  "url": "todo discord link",
+  "url": "",
+  "updateUrl": "",
   "authorList": ["Asc4, iBuyMountainDew"],
-  "credits": "InitStudios, FractalStudios, BP Team",
-  "logoFile": "initiativemodlogo.png"
+  "credits": "InitStudios, FractalStudios",
+  "logoFile": "initiativemodlogo.png",
+  "screenshots": [],
+  "dependencies": []
 }
 ]
