@@ -1,0 +1,13 @@
+
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "initmod:panel/depth/panel_face_test",
+    "down": "initmod:panel/depth/panel_back",
+    "up": "initmod:panel/depth/panel_back",
+    "east": "initmod:panel/depth/panel_back",
+    "west": "initmod:panel/depth/panel_back",
+    "north": "initmod:panel/depth/panel_face_test",
+    "south": "initmod:panel/depth/panel_back"
+  }
+}

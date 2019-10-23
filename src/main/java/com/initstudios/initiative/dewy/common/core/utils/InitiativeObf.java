@@ -1,6 +1,6 @@
 package com.initstudios.initiative.dewy.common.core.utils;
 
-import com.initstudios.initiative.Main;
+import com.initstudios.initiative.InitMod;
 import com.initstudios.initiative.dewy.common.blocks.*;
 import com.initstudios.initiative.util.Reference;
 
@@ -37,9 +37,9 @@ public class InitiativeObf
 
                     if (!Reference.VERSION_OF_MC.equals(OBF_VERSION))
                     {
-                        Main.logger.logFatalError("ObfuscationHelper string OBF_VERSION is not updated to match the current MC version! Bad Dewy! Fix it NOW!");
+                        InitMod.logger.logFatalError("ObfuscationHelper string OBF_VERSION is not updated to match the current MC version! Bad Dewy! Fix it NOW!");
 
-                        Main.commonHandler.exitJava(-1, true);
+                        InitMod.commonHandler.exitJava(-1, true);
                     }
 
                     return;

@@ -1,0 +1,11 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "initmod:panel_face_01"
+  },
+  
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

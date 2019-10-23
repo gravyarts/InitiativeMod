@@ -11,7 +11,7 @@
 
 package com.initstudios.initiative.common.items;
 
-import com.initstudios.initiative.Main;
+import com.initstudios.initiative.InitMod;
 import com.initstudios.initiative.util.Reference;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
@@ -37,12 +37,12 @@ public class ModItems {
     public static Item LB_GEL_SPEED_BALL;
     public static void init() {
         ARMOR_MATERIAL_STEEL_INGOT = EnumHelper.addArmorMaterial("armor_material_steel_ingot", Reference.MOD_ID + ":ow_steel_ingot", 20, new int[]{5, 10, 12, 5}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0f);
-        OW_BH_UNSTABLE = registerItem(new ItemBase(), "ow_bh_unstable", Main.items);
-        OW_BH_DUST = registerItem(new ItemBase(), "ow_bh_dust", Main.items);
-        OW_BH_STABLE = registerItem(new ItemBase(), "ow_bh_stable", Main.items);
-        OW_BH_CRYSTAL = registerItem(new ItemBase(), "ow_bh_crystal", Main.items);
+        OW_BH_UNSTABLE = registerItem(new ItemBase(), "ow_bh_unstable", InitMod.items);
+        OW_BH_DUST = registerItem(new ItemBase(), "ow_bh_dust", InitMod.items);
+        OW_BH_STABLE = registerItem(new ItemBase(), "ow_bh_stable", InitMod.items);
+        OW_BH_CRYSTAL = registerItem(new ItemBase(), "ow_bh_crystal", InitMod.items);
         LB_LONG_FALL_BOOTS = registerItem( new ArmorBase(ARMOR_MATERIAL_STEEL_INGOT, 1, EntityEquipmentSlot.FEET), "lb_long_fall_boots");
-        LB_GEL_SPEED_BALL = registerItem(new ItemSpeedGelBall(), "lb_gel_speed_ball", Main.items);
+        LB_GEL_SPEED_BALL = registerItem(new ItemSpeedGelBall(), "lb_gel_speed_ball", InitMod.items);
     }
 
     public static <T extends Item> T registerItem(T item, String name) {

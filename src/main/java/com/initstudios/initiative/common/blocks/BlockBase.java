@@ -11,7 +11,7 @@
 
 package com.initstudios.initiative.common.blocks;
 
-import com.initstudios.initiative.Main;
+import com.initstudios.initiative.InitMod;
 import com.initstudios.initiative.util.IHaveItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -21,7 +21,7 @@ import net.minecraft.item.ItemBlock;
 public class BlockBase extends Block implements IHaveItem {
 	public BlockBase(Material material) {
 		super(material);
-		setCreativeTab(Main.items);
+		setCreativeTab(InitMod.items);
 	}
 
 	@Override

@@ -1,0 +1,8 @@
+
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "initmod:panel/depth/panel_face_01",
+    "all": "initmod:panel/depth/panel_face_01"
+  }
+}

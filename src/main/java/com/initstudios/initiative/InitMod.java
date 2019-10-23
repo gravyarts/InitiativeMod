@@ -32,13 +32,13 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS, dependencies = Reference.DEPENDENCIES_FORGE, guiFactory = Reference.GUI_FACTORY)
-public class Main 
+public class InitMod 
 {
     public static FMLCommonHandler commonHandler;
     public static InitiativeLogger logger = InitiativeLogger.createInitiativeLogger("Initiative Mod");
 
     @Instance
-    public static Main instance;
+    public static InitMod instance;
     
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;
